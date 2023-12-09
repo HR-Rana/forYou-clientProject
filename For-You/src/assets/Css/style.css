@@ -1,0 +1,521 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --primaryColor: rgb(0, 255, 247);
+    --secondaryColor: rgb(0, 173, 0);
+
+    --whiteColor: white;
+    --gostWhite: ghostwhite;
+    --black: black;
+    --AssColor: rgb(230, 230, 230);
+    --Gray: gray;
+    --gold: gold;
+    --BrownColor: brown;
+
+    --boxShadow: 0px 0px 15px rgba(94, 104, 121, .2);
+    --transition: .6s;
+
+}
+
+
+/* Common Css styles */
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+/* .container-fluid{
+    width: 95%;
+    margin: 0 auto;
+} */
+.flex {
+    display: flex;
+}
+
+button {
+    outline: none !important;
+    border: none !important;
+    padding: 12px 10px !important;
+}
+
+.title {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.title h3 {
+    font-size: 36px;
+}
+
+.title p {
+    margin: 25px 0;
+}
+
+.section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Navbar styles */
+.top-navbar {
+    background-color: black;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-bar .logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.right-navbar-items {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-bar nav {
+    width: 50%;
+    justify-content: right;
+    display: flex;
+    margin-right: 15px;
+}
+
+.navigation-bar ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-bar nav li {
+    list-style: none;
+}
+
+.right-navbar-items button {
+    margin: 0px 5px;
+}
+
+
+
+
+/* home Page */
+
+.banner-area {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.667), rgba(0, 0, 0, 0.694)), url("../../assets/images/Global-people.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 25px;
+    height: 75vh;
+}
+
+.banner-area .content {
+    width: 75%;
+    margin: auto auto !important;
+    vertical-align: middle;
+    transform: translateY(80%);
+    -webkit-transform: translateY(80%);
+    -moz-transform: translateY(80%);
+    -ms-transform: translateY(80%);
+    -o-transform: translateY(80%);
+}
+.banner-area button{
+    width: 20%;
+}
+
+
+.Project-done-section {
+    padding: 75px 20px;
+}
+
+.Project-done-section .total-investor {
+    width: 23.5%;
+    background-color: var(--gostWhite);
+    padding: 45px;
+
+}
+
+.Project-done-section .total-investor h3 {
+    font-size: 30px;
+    color: var(--BrownColor);
+}
+
+
+
+
+/* how it works section */
+
+.how-it-works-section{
+    padding: 70px 0;
+}
+
+.how-it-works-section .flex-box{
+    margin: 75px 0;
+}
+.how-it-works-section .work-content{
+    width: 32%;
+    box-shadow: var(--boxShadow);
+    background-color: var(--gostWhite);
+    padding: 40px 20px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+.how-it-works-section .work-content:hover{
+    box-shadow: 0px 15px 30px rgba(94, 104, 121, .2);
+    background-color: white;
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+}
+.how-it-works-section .work-content img{
+    width: 100px;
+}
+.how-it-works-section .work-content h3{
+   margin-top: 15px;
+}
+
+
+
+
+
+
+
+/* latest transaction section */
+
+.latest-transaction {
+    padding: 60px 0;
+    background-color: var(--gostWhite);
+}
+
+.latest-transaction .button {
+    margin-top: 25px;
+}
+
+.latest-transaction button {
+    margin: 0px 15px;
+    width: 10%;
+    border: 1px solid var(--Gray) !important;
+}
+
+.latest-transaction button {
+    margin: 0px 15px;
+}
+
+.transaction-short-view {
+    width: 85%;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.transaction-short-view table {
+    width: 90%;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: var(--black);
+    color: white;
+    text-align: left;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.transaction-short-view table th {
+    padding: 10px;
+    border-bottom: 1px solid var(--gostWhite);
+    color: var(--gold);
+    letter-spacing: .5px;
+}
+
+.transaction-short-view tr td {
+    padding: 5px;
+}
+
+.transaction-short-view tr:hover {
+    background-color: gray;
+}
+
+.transaction-short-view {
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+
+.transaction-short-view .transaction img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.transaction-short-view .transaction .name {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+/* advantage area */
+.advantage-area {
+    padding: 45px 10px;
+}
+
+.advantage-area .content {
+    width: 48%;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+
+}
+
+.advantage-area .content h3 {
+    width: 100%;
+    text-align: left;
+    margin: 15px 0;
+    font-size: 26px;
+}
+
+.advantage-img {
+    width: 48%;
+}
+
+.advantage-img img {
+    width: 100%;
+    object-fit: contain !important;
+}
+
+
+
+
+
+
+
+
+
+/* Team Section */
+
+.team-section {
+    padding: 50px 0;
+}
+
+.team-memebers {
+    width: 100%;
+
+}
+
+.team-memebers .member-card {
+    width: 22%;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 50px 10px;
+}
+
+.team-memebers .member-card .card {
+    padding: 20px;
+    background-color: var(--gostWhite);
+    box-shadow: var(--boxShadow);
+    position: relative;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.team-memebers .member-card .card:hover {
+    padding: 20px;
+    background-color: var(--gostWhite);
+    box-shadow: 0px 25px 15px rgba(94, 104, 121, .1);
+    position: relative;
+}
+
+/* .team-memebers .member-card .card-body{
+    
+} */
+.team-memebers .member-card .card img {
+    width: 120px;
+    border-radius: 50%;
+    position: relative;
+    top: -75px;
+    border: 10px solid white;
+    z-index: 666666;
+    /* box-shadow: 0px 25px 15px rgba(94, 104, 121, .1); */
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.team-memebers .card-header {
+    height: 70px;
+    position: relative;
+
+}
+
+.team-memebers .member-card .card .card-header::after {
+    content: " ";
+    width: 60%;
+    height: 100px;
+    border: 50px;
+    /* background-color: rgb(255, 255, 255); */
+    position: absolute;
+    top: -50%;
+    left: 19%;
+    border-radius: 0px 0px 50% 50%;
+    -webkit-border-radius: 0px 0px 50% 50%;
+    -moz-border-radius: 0px 0px 50% 50%;
+    -ms-border-radius: 0px 0px 50% 50%;
+    -o-border-radius: 0px 0px 50% 50%;
+}
+
+.team-memebers .card .card-body {
+    margin: 10px 0;
+}
+
+.team-memebers .card .card-body p {
+    margin: 5px 0;
+}
+
+.team-memebers a {
+    width: fit-content;
+}
+
+.team-page {
+    padding: 35px 0;
+}
+
+
+.why-choose-us {
+    padding: 50px 0;
+}
+
+.why-choose-us .img {
+    width: 50%;
+}
+
+.text-content {
+    width: 47%;
+    text-align: left;
+}
+
+.text-content h2 {
+    font-size: 26px;
+    margin: 25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About Page */
+.About-terms {
+    padding: 45px 0;
+}
+
+.About-terms .flex-box {
+    display: block;
+}
+
+.term-content{
+    width: 45%;
+    display: inline-block;
+    padding: 25px 15px;
+    text-align: left;
+    margin: 10px;
+    background-color: var(--gostWhite);
+    box-shadow: var(--boxShadow);
+}
+.About-terms .term-content p{
+    margin: 10px 0;
+}
+.About-terms .term-content a{
+   text-decoration:underline;
+}
+
+
+
+
+
+
+
+/* foooter area style */
+
+footer {
+    background-color: black;
+    padding: 25px;
+    color: white;
+}
+
+footer .footer-content {}
