@@ -5,7 +5,10 @@ export default function Navbar() {
   return (
     <div className='top-navbar'>
       <div className="top-items">
-
+        <div className='download-app-title'>
+            <p>Download the App for Visit it easily from your Phone to get Better Experience..</p>
+            <button>Download</button>
+        </div>
       </div>
 
       <div className="navigation-bar">
