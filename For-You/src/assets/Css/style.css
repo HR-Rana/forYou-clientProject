@@ -17,6 +17,7 @@ font-family: 'Maven Pro', sans-serif; */
     --primaryColor: rgb(0, 255, 247);
     --secondaryColor: rgb(0, 173, 0);
 
+    --RoyalBlue:royalblue;
     --whiteColor: white;
     --gostWhite: ghostwhite;
     --black: black;
@@ -24,7 +25,7 @@ font-family: 'Maven Pro', sans-serif; */
     --Gray: gray;
     --gold: gold;
     --BrownColor: brown;
-    --greenColor:green;
+    --greenColor: green;
     --boxShadow: 0px 0px 15px rgba(94, 104, 121, .2);
     --transition: .6s;
 
@@ -53,10 +54,11 @@ h6 {
     padding: 15px 0;
 }
 
-/* .container-fluid{
+.container-fluid {
     width: 95%;
     margin: 0 auto;
-} */
+}
+
 .flex {
     display: flex;
 }
@@ -90,7 +92,29 @@ img {
     width: 100%;
 }
 
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--gostWhite);
+}
 
+.loader .loading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
 
 
 
@@ -103,20 +127,21 @@ img {
 .top-navbar {
     background-color: black;
 }
-.download-app-title{
+
+.download-app-title {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--gostWhite);
     font-size: 15px;
     padding: 10px 0;
-    
+
 }
 
-.download-app-title button{
+.download-app-title button {
     background-color: var(--BrownColor);
     padding: 5px 10px !important;
-    color: white ;
+    color: white;
     margin-left: 15px;
     transition: .6s;
     -webkit-transition: .6s;
@@ -124,7 +149,8 @@ img {
     -ms-transition: .6s;
     -o-transition: .6s;
 }
-.download-app-title button:hover{
+
+.download-app-title button:hover {
     background-color: green;
     color: rgb(255, 255, 255);
     border: 2px solid var(--green) !important;
@@ -134,14 +160,16 @@ img {
     -ms-transform: translateX(5px);
     -o-transform: translateX(5px);
 }
+
 .navigation-bar {
     display: flex;
     justify-content: space-between;
-    
+    height: 70px;
 }
 
 .navigation-bar .logo {
     width: 20%;
+    height: 100%;
     display: flex;
     align-items: center;
     color: white;
@@ -171,6 +199,17 @@ img {
 
 .navigation-bar nav li {
     list-style: none;
+}
+
+.navigation-bar nav li a {
+    padding-bottom: 15px;
+    color: var(--whiteColor);
+    position: relative;
+}
+
+.navigation-bar nav li a.active {
+    border-bottom: 2px solid rgb(241, 241, 241);
+    position: relative;
 }
 
 .right-navbar-items button {
@@ -211,7 +250,7 @@ img {
 
 
 .Project-done-section {
-    padding: 75px 20px;
+    padding: 75px 0px;
 }
 
 .Project-done-section .total-investor {
@@ -271,6 +310,7 @@ img {
 .how-it-works-section .work-content h3 {
     margin-top: 15px;
 }
+
 .how-it-works-section .work-content p {
     margin-top: 15px;
     font-size: 17px;
@@ -407,6 +447,10 @@ img {
 
 /* Team Section */
 
+.team-section {
+    padding: 70px 0;
+}
+
 .team-page {
     margin: 50px 0;
 }
@@ -501,6 +545,44 @@ img {
     padding: 35px 0;
 }
 
+.team-memebers .card-footer {
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-memebers .card-footer span {
+    width: 22%;
+}
+.team-memebers .card-footer svg {
+   font-size: 20px;
+    color: var(--RoyalBlue);
+   transition: var(--transition);
+   -webkit-transition: var(--transition);
+   -moz-transition: var(--transition);
+   -ms-transition: var(--transition);
+   -o-transition: var(--transition);
+}
+.team-memebers .card-footer svg:hover {
+    color: var(--greenColor);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .why-choose-us {
     padding: 50px 0;
@@ -513,6 +595,10 @@ img {
 .text-content {
     width: 47%;
     text-align: left;
+}
+
+.text-content ul li {
+    line-height: 35px;
 }
 
 .text-content h2 {
@@ -553,8 +639,56 @@ img {
 
 
 /* About Page */
+
+
+.aboutUs-section {
+    text-align: left;
+    padding: 70px 0;
+}
+
+.aboutUs-section .title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+.aboutUs-section .about-left {
+    width: 48%;
+}
+
+.aboutUs-section .about-left h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.aboutUs-section .about-right {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 50px;
+    align-self: center;
+}
+
+.aboutUs-section .about-right ul span {
+    display: flex;
+    align-items: center;
+}
+
+.aboutUs-section .about-right ul span img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.aboutUs-section .about-right li {
+    list-style: none;
+}
+
 .About-terms {
-    padding: 45px 0;
+    padding: 70px 0;
+    background-color: var(--gostWhite);
 }
 
 .About-terms .flex-box {
@@ -642,6 +776,98 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+/* contact page */
+
+.Contact-page {
+    padding: 50px 0;
+}
+
+.Contact-page .title p {
+    margin: 10px;
+}
+
+.Contact-page .contact-form-secton {
+    padding: 30px 0;
+
+}
+
+.Contact-page .contact-form-secton .left-img {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.Contact-page .contact-form-secton img {
+    width: 70%;
+    height: 100%;
+
+}
+
+.Contact-page .right-form {
+    width: 50%;
+}
+
+.Contact-page .contact-form form {
+    display: block !important;
+
+}
+
+.Contact-page .contact-form form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: var(--boxShadow);
+    border: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background-color: var(--gostWhite);
+}
+
+.Contact-page .contact-form input[type=submit] {
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+.Contact-page .contact-form form textarea {
+    width: 100%;
+    height: 200px;
+    font-size: 17px;
+    padding: 20px;
+    margin: 10px 0;
+    text-transform: capitalize;
+    box-shadow: var(--boxShadow);
+    border: none;
+    letter-spacing: 1px;
+    background-color: var(--gostWhite);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* foooter area style */
 
 footer {
@@ -650,4 +876,43 @@ footer {
     color: white;
 }
 
-footer .footer-content {}
+footer .footer-content h4 {}
+
+footer .footer-content .content {
+    width: 22%;
+    text-align: left;
+}
+
+footer .footer-content .nav-items li {
+    width: 42%;
+    text-align: left;
+    line-height: 30px;
+}
+
+footer .footer-content .nav-items li a:hover {
+    color: white;
+    transform: translateY(55px);
+    -webkit-transform: translateY(55px);
+    -moz-transform: translateY(55px);
+    -ms-transform: translateY(55px);
+    -o-transform: translateY(55px);
+}
+
+footer .footer-content .address {
+    color: white;
+    list-style: none;
+    text-align: left;
+    line-height: 35px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer li {
+    font-size: 14px;
+}
+
+footer .copy-right {
+    padding: 30px 00;
+}

@@ -1,5 +1,7 @@
 import React from "react";
- import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaFacebookSquare, FaInstagram, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import { Link } from "react-router-dom";
+
 
 export default function TeamCard(props) {
 	const { name, id, designation, facebook, linkedin, instagram, twitter, img } =
@@ -21,8 +23,16 @@ export default function TeamCard(props) {
 				</div>
 				<div className="card-footer">
 					<span>
-						<FontAwesomeIcon icon="fa-brands fa-square-facebook" />
-						facebook
+						<Link to={""}><FaFacebookSquare /></Link>
+					</span>
+					<span>
+						<Link to={""}><FaInstagram/></Link>
+					</span>
+					<span>
+						<Link to={""}><FaLinkedin/></Link>
+					</span>
+					<span>
+						<Link to={""}><FaTwitterSquare/></Link>
 					</span>
 				</div>
 			</div>

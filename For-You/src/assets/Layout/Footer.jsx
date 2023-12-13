@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { IoCall } from "react-icons/io5";
 
 export default function Footer() {
 	return (
 		<footer>
 			<div className="footer-content flex-box">
-				<div className="footer-logo">
+				<div className="footer-logo content">
 					<p>
 						<Link to={"/"}>For-you</Link>
 					</p>
@@ -14,7 +15,8 @@ export default function Footer() {
 						assumenda modi minima harum qui. Nulla eos deleniti fugiat?
 					</small>
 				</div>
-				<div className="nav-items">
+				<div className="nav-items content">
+					<h4>Quick navlinks</h4>
 					<nav>
 						<ul>
 							<li>
@@ -35,12 +37,38 @@ export default function Footer() {
 						</ul>
 					</nav>
 				</div>
-        <div className="">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sequi nulla quod totam incidunt veniam doloribus, laboriosam dolor quis in?</p>
-        </div>
-        <div className="">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sequi nulla quod totam incidunt veniam doloribus, laboriosam dolor quis in?</p>
-        </div>
+				<div className="content">
+					<h4></h4>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
+						sequi nulla quod totam incidunt veniam doloribus, laboriosam dolor
+						quis in?
+					</p>
+				</div>
+				<div className="content address">
+					<h4>Contact us</h4>
+					<div>
+						<li>
+							<span>
+								<IoCall />
+							</span>{" "}
+							<p>+1 (409) 987–5874</p>
+						</li>
+						<li>
+							<span><  </span> <p>info@demolink.org</p>
+						</li>
+						<li>
+							<span></span> <p>6036 Richmond hwy, Alexandria, VA USA 22303</p>
+						</li>
+					</div>
+				</div>
+			</div>
+
+			<div className="copy-right">
+				<p>
+					&copy; copyright 2023 | all rights deserved by{" "}
+					<Link to={""}>For-You</Link>
+				</p>
 			</div>
 		</footer>
 	);

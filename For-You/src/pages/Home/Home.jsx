@@ -9,24 +9,24 @@ import HowWorks from "./HowItWorks/HowWorks";
 
 export default function Home() {
 	return (
-		<div className="home-page container-fluid">
+		<div className="home-page">
 			<Hero />
-			<section className="">
+			<section>
 				<ProjectDone />
 			</section>
 			<section>
 				<HowWorks/>
 			</section>
-			<section className="">
+			<section>
 				<LatestTransition />
 			</section>
-			<section className="">
+			<section>
 				<Advantage />
 			</section>
 			<section>
 				<ChooseUs/>
 			</section>
-			<section className="">
+			<section>
 				<Team />
 			</section>
 

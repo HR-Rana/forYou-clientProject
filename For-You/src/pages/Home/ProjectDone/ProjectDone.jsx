@@ -4,7 +4,7 @@ import Withdraw from './../../Withdraw/Withdraw';
 
 export default function ProjectDone() {
 	return (
-		<div className="Project-done-section flex-box">
+		<div className="Project-done-section flex-box container-fluid">
 			<div className="total-investor">
 				<h3>
 					<CountUp end={1000} />
