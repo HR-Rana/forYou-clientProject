@@ -17,7 +17,7 @@ font-family: 'Maven Pro', sans-serif; */
     --primaryColor: rgb(0, 255, 247);
     --secondaryColor: rgb(0, 173, 0);
 
-    --RoyalBlue:royalblue;
+    --RoyalBlue: royalblue;
     --whiteColor: white;
     --gostWhite: ghostwhite;
     --black: black;
@@ -555,22 +555,24 @@ textarea {
 .team-memebers .card-footer span {
     width: 22%;
 }
+
 .team-memebers .card-footer svg {
-   font-size: 20px;
+    font-size: 20px;
     color: var(--RoyalBlue);
-   transition: var(--transition);
-   -webkit-transition: var(--transition);
-   -moz-transition: var(--transition);
-   -ms-transition: var(--transition);
-   -o-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
 }
+
 .team-memebers .card-footer svg:hover {
     color: var(--greenColor);
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 
@@ -863,9 +865,139 @@ textarea {
 
 
 
+/* profile page */
+.profile-page {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.profile-page-layout {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-page-layout .ProfileSidebar {
+    width: 25%;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+
+.profile-page-layout .sidebar-box .user-name {
+    margin: 25px 15px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    box-shadow: var(--boxShadow);
+    border-bottom: 1px solid rgb(233, 233, 233);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.profile-page-layout .sidebar-box .user-name h4 {
+    width: 80%;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.profile-page-layout .sidebar-box .user-name span {
+    width: 20%;
+}
+
+.profile-page-layout .sidebar-box .user-name img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile-page-layout .sidebar-box ul {
+    padding: 10px 0;
+    box-shadow: var(--boxShadow);
+    margin: 25px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 16px;
+}
+
+.profile-page-layout .sidebar-box li {
+    list-style: none;
+    text-align: left;
+    padding: 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.profile-page-layout .sidebar-box li:not(:last-child) {
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.profile-page-layout .sidebar-box li a.active {
+    background-color: var(--RoyalBlue);
+}
+
+.profile-page-layout .sidebar-box li:hover {
+    background-color: var(--RoyalBlue);
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    cursor: pointer;
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    -ms-border-radius: 0px 5px 5px 0px;
+    -o-border-radius: 0px 5px 5px 0px;
+}
+
+.profile-page-layout .ProfileContents {
+    width: 74%;
+    background-color: var(--gostWhite);
+    padding: 25px 0
+}
 
 
 
+
+
+
+
+
+
+
+
+/* error page */
+
+.error-page {
+    padding: 25px 0;
+}
+
+.error-page p {
+    color: var(--BrownColor);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.error-page img {
+    width: 50%;
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* foooter area style */
@@ -873,10 +1005,12 @@ textarea {
 footer {
     background-color: black;
     padding: 25px;
-    color: white;
+    color: rgb(191, 191, 191);
 }
 
-footer .footer-content h4 {}
+footer .footer-content .text {
+    padding-top: 15px;
+}
 
 footer .footer-content .content {
     width: 22%;
@@ -898,11 +1032,41 @@ footer .footer-content .nav-items li a:hover {
     -o-transform: translateY(55px);
 }
 
+footer .social-icons p {
+    margin-bottom: 30px;
+}
+
+footer .social-icons span {
+    width: 23.5%;
+    display: inline-block;
+}
+
+footer .social-icons svg {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+
 footer .footer-content .address {
-    color: white;
     list-style: none;
     text-align: left;
     line-height: 35px;
+}
+
+footer .address li {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+footer .address li svg {
+    width: 20px;
+    height: 20px;
+    color: var(--RoyalBlue);
+    font-size: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-self: center;
 }
 
 footer p {

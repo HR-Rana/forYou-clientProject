@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IoCall } from "react-icons/io5";
+import { IoCall, IoLocationSharp, IoLogoLinkedin, IoMail } from "react-icons/io5";
+import { FaFacebookSquare, FaLinkedinIn, FaTwitterSquare,  FaYoutubeSquare } from "react-icons/fa";
 
 export default function Footer() {
 	return (
@@ -10,14 +11,17 @@ export default function Footer() {
 					<p>
 						<Link to={"/"}>For-you</Link>
 					</p>
-					<small>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-						assumenda modi minima harum qui. Nulla eos deleniti fugiat?
-					</small>
+					<div className="text">
+						<small>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Repudiandae assumenda modi minima harum qui. Nulla eos deleniti
+							fugiat?
+						</small>
+					</div>
 				</div>
 				<div className="nav-items content">
 					<h4>Quick navlinks</h4>
-					<nav>
+					<nav className="text">
 						<ul>
 							<li>
 								<Link to={"/"}> Home</Link>
@@ -38,16 +42,28 @@ export default function Footer() {
 					</nav>
 				</div>
 				<div className="content">
-					<h4></h4>
-					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima
-						sequi nulla quod totam incidunt veniam doloribus, laboriosam dolor
-						quis in?
-					</p>
+					<h4>Our Social Media</h4>
+					<div className="text social-icons">
+						<p>Find us On social media, and stay connect with us for get more latest upadate and news</p>
+						<span>
+							<FaFacebookSquare />
+						</span>
+						<span>
+							<FaYoutubeSquare />
+						</span>
+						<span>
+							<IoLogoLinkedin/>
+						</span>
+						<span>
+							<FaTwitterSquare />
+						</span>
+						
+						
+					</div>
 				</div>
 				<div className="content address">
 					<h4>Contact us</h4>
-					<div>
+					<div className="text">
 						<li>
 							<span>
 								<IoCall />
@@ -55,10 +71,16 @@ export default function Footer() {
 							<p>+1 (409) 987–5874</p>
 						</li>
 						<li>
-							<span><  </span> <p>info@demolink.org</p>
+							<span>
+								<IoMail />{" "}
+							</span>{" "}
+							<p>info@demolink.org</p>
 						</li>
 						<li>
-							<span></span> <p>6036 Richmond hwy, Alexandria, VA USA 22303</p>
+							<span>
+								<IoLocationSharp />{" "}
+							</span>{" "}
+							<p>6036 Richmond hwy, Alexandria, VA USA 22303</p>
 						</li>
 					</div>
 				</div>

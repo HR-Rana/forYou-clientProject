@@ -41,7 +41,7 @@ export default function HowWorks() {
                         WorkData.map((items, index)=>{
                             const {icon, text, title}= items;
                             return(
-                                <div className="work-content">
+                                <div className="work-content" key={index}>
                                     <span>
                                         <img src={icon} alt="icon" />
                                     </span>
