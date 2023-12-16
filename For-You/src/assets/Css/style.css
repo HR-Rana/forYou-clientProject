@@ -535,7 +535,8 @@ textarea {
 }
 
 .team-memebers .card .card-body p {
-    margin: 5px 0;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .team-memebers a {
