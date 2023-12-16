@@ -6,9 +6,7 @@ import { Link } from "react-router-dom";
 export default function LatestTransition() {
 	const [daily, setMonthly] = useState(false);
 
-	const ActiveColor = {
-		// {{backgroundColor: daily? "" : 'brown', color:daily? "" : 'white'}}
-	};
+
 
 	return (
 		<div className="latest-transaction">

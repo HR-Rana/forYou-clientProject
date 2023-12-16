@@ -205,6 +205,7 @@ textarea {
     padding-bottom: 15px;
     color: var(--whiteColor);
     position: relative;
+    font-size: 16px;
 }
 
 .navigation-bar nav li a.active {
@@ -869,6 +870,7 @@ textarea {
 .profile-page {
     padding: 0 !important;
     margin: 0 !important;
+    background-color: var(--gostWhite);
 }
 
 .profile-page-layout {
@@ -881,7 +883,14 @@ textarea {
     width: 25%;
     padding: 0;
     position: sticky;
+    top: 50%;
+}
+
+.profile-page-layout .sidebar-box {
+    position: sticky;
     top: 0;
+    margin: 35px 0;
+    background-color: var(--gostWhite);
 }
 
 .profile-page-layout .sidebar-box .user-name {
@@ -892,6 +901,9 @@ textarea {
     display: flex;
     border-radius: 5px;
     align-items: center;
+    letter-spacing: 1px;
+    font-weight: 400;
+    background-color: var(--whiteColor);
     box-shadow: var(--boxShadow);
     border-bottom: 1px solid rgb(233, 233, 233);
     -webkit-border-radius: 5px;
@@ -923,6 +935,7 @@ textarea {
 
 .profile-page-layout .sidebar-box ul {
     padding: 10px 0;
+    background-color: var(--whiteColor);
     box-shadow: var(--boxShadow);
     margin: 25px 15px;
     border-radius: 5px;
@@ -944,6 +957,20 @@ textarea {
     -o-transition: .3s;
 }
 
+.profile-page-layout ul li {
+    display: flex;
+    height: 100%;
+
+    align-items: center;
+}
+
+.profile-page-layout ul li svg {
+    width: 40px;
+    font-size: 18px;
+    color: var(--RoyalBlue);
+    display: flex;
+}
+
 .profile-page-layout .sidebar-box li:not(:last-child) {
     border-bottom: 1px solid rgb(226, 226, 226);
 }
@@ -952,7 +979,7 @@ textarea {
     background-color: var(--RoyalBlue);
 }
 
-.profile-page-layout .sidebar-box li:hover {
+.profile-page-layout .sidebar-box .profile-nav li:hover {
     background-color: var(--RoyalBlue);
     border-radius: 0px 5px 5px 0px;
     color: white;
@@ -966,15 +993,31 @@ textarea {
 .profile-page-layout .ProfileContents {
     width: 74%;
     background-color: var(--gostWhite);
-    padding: 25px 0
+    padding: 25px 0;
+    text-align: left;
+}
+
+.profile-page-layout .sidebar-log-out {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-page-layout .sidebar-box ul:nth-child(1)li:hover {}
+
+.profile-page-layout .sidebar-log-out li:hover {
+    background-color: none !important;
 }
 
 
+.profile-page .react-tabs {
+    
+    justify-content: space-between;
+}
 
 
-
-
-
+/* .ProfileContents p{
+    background-color: red;
+} */
 
 
 
