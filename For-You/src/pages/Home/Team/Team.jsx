@@ -31,9 +31,12 @@ export default function Team() {
 						);
 					})}
 				</div>
-				<p>
-					<Link to={"/Team-members"}>See More Team Members {">>"}</Link>
-				</p>
+
+				<span className="memeber-link">
+					<p>
+						<Link to={"/Team-members"}>See More Team Members {">>"}</Link>
+					</p>
+				</span>
 			</div>
 		</div>
 	);

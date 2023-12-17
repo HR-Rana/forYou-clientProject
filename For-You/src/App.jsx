@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-import "./App.css";
 import "./assets/Css/style.css";
+import "./assets/Css/Responsive.css";
 import Routing from "./assets/Routing/Routing";
 import Navbar from "./assets/Layout/Navbar";
 import Footer from "./assets/Layout/Footer";

@@ -1,1 +1,113 @@
-    
+    @media (max-width:992px) {
+        .right-navbar-items {
+            width: 80%;
+        }
+
+        .navigation-bar nav {
+            width: 60%;
+        }
+
+
+
+        /* contact page */
+        .contact-form-secton .flex-box {
+            flex-wrap: wrap;
+        }
+
+        .Contact-page .contact-form-secton .left-img {
+            width: 75%;
+            margin: 30px auto;
+        }
+
+        .Contact-page .right-form {
+            width: 80%;
+            margin: 25px auto;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+    @media (max-width:768px) {
+        .title {
+            width: 80%;
+            text-align: center;
+        }
+
+        .aboutUs-section .flex-box {
+            display: block;
+            flex-wrap: wrap;
+        }
+
+        .aboutUs-section .about-left {
+            width: 90%;
+            margin: 25px auto;
+        }
+
+        .aboutUs-section .about-right {
+            width: 100%;
+            margin: 25px auto;
+        }
+
+        .About-terms .flex-box {
+            flex-wrap: wrap;
+        }
+
+        .About-terms .term-content {
+            width: 100%;
+            margin: 20px 0;
+            padding: 25px;
+        }
+
+        footer .footer-content .flex-box {
+            flex-wrap: wrap;
+            display: block;
+        }
+
+        footer .footer-content.flex-box {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        footer .footer-content .content {
+            width: 46%;
+            margin: 15px 0;
+        }
+    }
+
+
+
+
+    @media (max-width:540px) {
+        
+        body{
+            font-size: 16px;
+        }
+
+        footer .footer-content .content {
+            width: 90%;
+            margin: 15px auto;
+        }
+
+        footer .copy-right p {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 13px;
+        }
+    }
+
+
+
+
+
+
+
+
+    /* footer section */

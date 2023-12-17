@@ -57,6 +57,7 @@ h6 {
 .container-fluid {
     width: 95%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .flex {
@@ -72,7 +73,7 @@ button {
 .title {
     width: 60%;
     margin: 0 auto;
-
+    text-align: center;
 }
 
 .title h3 {
@@ -234,15 +235,17 @@ textarea {
     height: 75vh;
 }
 
-.banner-area .content {
-    width: 75%;
+.banner-area {
+    width: 100%;
     margin: auto auto !important;
-    vertical-align: middle;
-    transform: translateY(80%);
-    -webkit-transform: translateY(80%);
-    -moz-transform: translateY(80%);
-    -ms-transform: translateY(80%);
-    -o-transform: translateY(80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-area .content {
+    width: 80%;
+    text-align: center;
 }
 
 .banner-area button {
@@ -250,6 +253,14 @@ textarea {
 }
 
 
+
+
+
+
+
+
+
+/* Project done section */
 .Project-done-section {
     padding: 75px 0px;
 }
@@ -331,7 +342,9 @@ textarea {
 }
 
 .latest-transaction .button {
-    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .latest-transaction button {
@@ -348,6 +361,11 @@ textarea {
     width: 85%;
     margin: 0 auto;
     padding: 35px 0;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
 }
 
 .transaction-short-view table {
@@ -404,6 +422,19 @@ textarea {
 
 }
 
+.latest-transaction a {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -450,15 +481,15 @@ textarea {
 
 .team-section {
     padding: 70px 0;
-}
-
-.team-page {
-    margin: 50px 0;
+    text-align: center;
+   
 }
 
 .team-memebers {
     width: 100%;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-items {
@@ -466,10 +497,12 @@ textarea {
 }
 
 .team-memebers .member-card {
-    width: 22%;
+    width: 22.5%;
     display: inline-block;
     justify-content: space-between;
     margin: 50px 10px;
+    text-align: center;
+    
 }
 
 .team-memebers .member-card .card {
@@ -491,9 +524,7 @@ textarea {
     position: relative;
 }
 
-/* .team-memebers .member-card .card-body{
-    
-} */
+
 .team-memebers .member-card .card img {
     width: 120px;
     border-radius: 50%;
@@ -1003,15 +1034,13 @@ textarea {
     justify-content: center;
 }
 
-.profile-page-layout .sidebar-box ul:nth-child(1)li:hover {}
-
 .profile-page-layout .sidebar-log-out li:hover {
     background-color: none !important;
 }
 
 
 .profile-page .react-tabs {
-    
+
     justify-content: space-between;
 }
 
@@ -1042,6 +1071,16 @@ textarea {
     align-items: center;
     justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* foooter area style */
@@ -1123,4 +1162,5 @@ footer li {
 
 footer .copy-right {
     padding: 30px 00;
+    text-align: center;
 }

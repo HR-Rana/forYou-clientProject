@@ -47,16 +47,16 @@ export default function LatestTransition() {
 			</div>
 			<div className="transaction-short-view">
 				{daily ? (
-					<span style={{ display: daily? "block" : "none"}}>
+					<span className={{ margin: daily? "0 auto" : "0px"}}>
 						<MonthlyTransition prop={daily} />
 					</span>
 				) : (
-					<span style={{ display: daily? "none" : "block" }}>
+					<span style={{ margin: daily? "0 auto" : "0" }}>
 						<DailyTransition />
 					</span>
 				)}
 			</div>
-			<Link to={'/Transaction'}><p>See More Transaction {'>>'} </p></Link>
+			<Link to={'/Investment'}><p>See More Transaction {'>>'} </p></Link>
 		</div>
 	);
 }

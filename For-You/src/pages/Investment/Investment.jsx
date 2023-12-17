@@ -4,6 +4,7 @@ import img2 from "../../assets/images/03.jpg";
 import img3 from "../../assets/images/04.jpg";
 import { Link } from "react-router-dom";
 
+
 export default function Investment() {
 	return (
 		<div className="investment-page">
