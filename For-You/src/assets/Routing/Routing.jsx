@@ -8,6 +8,7 @@ import Team from "./../../pages/Team/Team";
 import Contact from "./../../pages/Contact/Contact";
 import ProfilePage from "../../pages/Home/UserProfile/ProfilePage";
 import Error from "../../pages/ErrorPage/Error";
+import AuthPage from "../../pages/AuthPage/AuthPage";
 
 export default function Routing() {
 	return (
@@ -20,6 +21,9 @@ export default function Routing() {
 			<Route path="/Team-members" element={<Team />}></Route>
 			<Route path="/Contact" element={<Contact />}></Route>
 			<Route path="/Profile" element={<ProfilePage />} />
+			<Route path="/Authentication" element={<AuthPage/>}/>
+			<Route path="/Registration" element={<AuthPage/>}/>
+			
 		</Routes>
 	);
 }

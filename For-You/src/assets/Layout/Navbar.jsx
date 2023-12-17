@@ -28,8 +28,8 @@ export default function Navbar() {
             </ul>
           </nav>
             <div className="account">
-              <Link><button>Login</button></Link>
-              <Link><button>Resigtration</button></Link>
+              <Link to={'/Authentication'}><button>Login</button></Link>
+              <Link to={"/Registration"}><button>Resigtration</button></Link>
             </div>
         </div>
       </div>
