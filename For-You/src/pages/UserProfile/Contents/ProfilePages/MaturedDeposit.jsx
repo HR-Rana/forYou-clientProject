@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function MaturedDeposit() {
-  return (
-    <div>MaturedDeposit</div>
-  )
+	return <div>this is MaturedDeposit page</div>;
 }
