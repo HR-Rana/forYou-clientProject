@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import profile from "../../../../assets/images/02.jpg";
-import { Tab, TabList} from "react-tabs";
+import profile from "../../../assets/images/02.jpg";
+import { Tab, TabList } from "react-tabs";
 
 import { IoLogOut, IoNotificationsCircleSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
@@ -14,17 +14,17 @@ import { FaMoneyBillTrendUp } from "react-icons/fa6";
 
 export default function ProfileSidebar() {
 	return (
-		<div className="ProfileSidebar">
-			<div className="sidebar-box">
-				<div className="user-name">
-					<span>
-						<img src={profile} alt="profile" />
-					</span>
-					<h4>User Name</h4>
-				</div>
+		<TabList>
+			<div className="ProfileSidebar">
+				<div className="sidebar-box">
+					<div className="user-name">
+						<span>
+							<img src={profile} alt="profile" />
+						</span>
+						<h4>User Name</h4>
+					</div>
 
-				<div className="profile-nav">
-					<TabList>
+					<div className="profile-nav">
 						<ul>
 							<Tab>
 								<li>
@@ -100,17 +100,17 @@ export default function ProfileSidebar() {
 								</li>
 							</Tab>
 						</ul>
-					</TabList>
+					</div>
+					<ul className="sidebar-log-out">
+						<li>
+							<span>
+								<IoLogOut />
+							</span>{" "}
+							<Link to={""}>Logout</Link>
+						</li>
+					</ul>
 				</div>
-				<ul className="sidebar-log-out">
-					<li>
-						<span>
-							<IoLogOut />
-						</span>{" "}
-						<Link to={""}>Logout</Link>
-					</li>
-				</ul>
 			</div>
-		</div>
+		</TabList>
 	);
 }

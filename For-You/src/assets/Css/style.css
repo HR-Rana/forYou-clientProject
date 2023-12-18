@@ -925,10 +925,19 @@ form input[type=submit] {
 }
 
 .profile-page-layout .ProfileSidebar {
-    width: 25%;
+    width: 100%;
     padding: 0;
     position: sticky;
     top: 50%;
+    
+
+}
+
+.profile-page .react-tabs {
+    display: flex;
+}
+.profile-page .react-tabs__tab-list{
+    border-bottom: none;
 }
 
 .profile-page-layout .sidebar-box {
@@ -939,6 +948,7 @@ form input[type=submit] {
 }
 
 .profile-page-layout .sidebar-box .user-name {
+    width: 100%;
     margin: 25px 15px;
     padding: 15px 20px;
     display: flex;
@@ -979,6 +989,9 @@ form input[type=submit] {
 }
 
 .profile-page-layout .sidebar-box ul {
+    width: 100%;
+    background-color: red;
+    
     padding: 10px 0;
     background-color: var(--whiteColor);
     box-shadow: var(--boxShadow);
