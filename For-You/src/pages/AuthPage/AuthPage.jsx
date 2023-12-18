@@ -13,7 +13,9 @@ export default function AuthPage() {
     const match = getURL.includes(Path);
   
 
-    
+    const handleAuthFormSwitch =() =>{
+		setLogin(false)
+	}
    
 
 	return (
@@ -47,11 +49,11 @@ export default function AuthPage() {
 					{login ? (
 						<span>
 							{" "}
-							<Login />{" "}
+							<Login authFormSwitch={handleAuthFormSwitch} />{" "}
 						</span>
 					) : (
 						<span>
-							<Registration />
+							<Registration authFormSwitch={handleAuthFormSwitch} />
 						</span>
 					)}
 				</div>

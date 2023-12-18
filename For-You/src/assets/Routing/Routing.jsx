@@ -9,6 +9,7 @@ import Contact from "./../../pages/Contact/Contact";
 import ProfilePage from "../../pages/Home/UserProfile/ProfilePage";
 import Error from "../../pages/ErrorPage/Error";
 import AuthPage from "../../pages/AuthPage/AuthPage";
+import ForgotPassword from "../../pages/AuthPage/ForgotPassword";
 
 export default function Routing() {
 	return (
@@ -23,6 +24,7 @@ export default function Routing() {
 			<Route path="/Profile" element={<ProfilePage />} />
 			<Route path="/Authentication" element={<AuthPage/>}/>
 			<Route path="/Registration" element={<AuthPage/>}/>
+			<Route path="/ResetPassword" element={<ForgotPassword/>}/>
 			
 		</Routes>
 	);

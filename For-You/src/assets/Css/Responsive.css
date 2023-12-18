@@ -24,6 +24,19 @@
             margin: 25px auto;
         }
 
+
+        /* password Reset page */
+        .ResetPassword {
+            height: 100%;
+            display: block;
+            align-items: start;
+
+        }
+
+        .ResetPassword .login-page {
+            width: 60%;
+            overflow: scroll;
+        }
     }
 
 
@@ -66,6 +79,22 @@
             padding: 25px;
         }
 
+
+
+
+        /* password Reset page */
+       
+        .ResetPassword .login-page {
+            width: 70%;
+            overflow: scroll;
+        }
+
+      
+
+
+
+
+        /* foooter section */
         footer .footer-content .flex-box {
             flex-wrap: wrap;
             display: block;
@@ -86,11 +115,33 @@
 
 
     @media (max-width:540px) {
-        
-        body{
+
+        body {
             font-size: 16px;
         }
 
+
+
+        /* password Reset page */
+        .ResetPassword{
+            padding: 0;
+        }
+        .ResetPassword .login-page {
+            width: 100%;
+            overflow: scroll;
+        }
+
+        .ResetPassword .login-page p {
+            font-size: 13px;
+        }
+        .ResetPassword .login-page form{
+            padding: 0px 10px;
+        }
+        .ResetPassword .login-page input {
+            padding: 7px;
+        }
+
+        /* footer section */
         footer .footer-content .content {
             width: 90%;
             margin: 15px auto;

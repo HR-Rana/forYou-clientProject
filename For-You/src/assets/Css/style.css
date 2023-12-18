@@ -68,6 +68,7 @@ button {
     outline: none !important;
     border: none !important;
     padding: 12px 10px !important;
+    cursor: pointer;
 }
 
 .title {
@@ -116,6 +117,19 @@ input {
 textarea {
     outline: none;
 }
+
+form input[type=submit] {
+    color: var(--whiteColor);
+    font-size: 17px;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--RoyalBlue);
+    cursor: pointer;
+}
+
+
+
+
 
 
 
@@ -1065,7 +1079,7 @@ textarea {
 
 .Authentication-page .log-reg-button button {
     margin: 0px 10px;
-    width: 10%;
+    width: 12%;
 }
 
 
@@ -1111,15 +1125,64 @@ textarea {
 .login-page .Login-otherWay button {
     width: 60%;
 }
-.login-page .login-reg-refer{
+
+.login-page .login-reg-refer {
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     color: red;
 }
-.login-page .login-reg-refer a{ 
+
+.login-page .login-reg-refer a {
     text-decoration: underline;
 }
+
+
+
+/* Reset password.. */
+.ResetPassword {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 45px 0;
+    background-color: white;
+    z-index: 9999999999;
+    display: flex;
+    align-items: center;
+}
+
+.ResetPassword .login-section {
+    width: 100% !important;
+    height: 50%;
+    margin: 0 auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ResetPassword form {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ResetPassword h3 {
+    font-size: 18px;
+    color: var(--BrownColor);
+}
+
+.ResetPassword p {
+    font-size: 15px;
+    margin: 10px 0;
+}
+
+.ResetPassword .login-page {
+    padding: 0px 20px;
+}
+
+
 
 
 
@@ -1134,6 +1197,7 @@ textarea {
     color: var(--BrownColor);
     font-weight: 700;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .error-page img {
