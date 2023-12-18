@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import google from '../../assets/images/Google.png'
+import facebook from '../../assets/images/facebook.png'
 
 export default function Login() {
 	return (
@@ -19,12 +21,12 @@ export default function Login() {
 					</div>
 				</form>
 				<div className="Login-otherWay flex">
-					<p>or Try another way</p>
+					<p>Or, Login with</p>
 					<div className="google">
-						<button>Google</button>
+						<button><img src={google} alt="" /> Google</button>
 					</div>
 					<div className="facebook">
-						<button>Facebook</button>
+						<button><img src={facebook} alt="" /> Facebook</button>
 					</div>
 				</div>
 			</div>
