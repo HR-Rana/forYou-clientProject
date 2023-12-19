@@ -8,7 +8,6 @@ import Contact from "./../../pages/Contact/Contact";
 import Error from "../../pages/ErrorPage/Error";
 import AuthPage from "../../pages/AuthPage/AuthPage";
 import ForgotPassword from "../../pages/AuthPage/ForgotPassword";
-import Ash from "../../pages/UserProfile/Ash";
 import ProfilePage from "../../pages/UserProfile/ProfilePage";
 
 export default function Routing() {
@@ -21,8 +20,7 @@ export default function Routing() {
 			{/* <Route path='/Blog' element={<Blog/>}></Route> */}
 			<Route path="/Team-members" element={<Team />}></Route>
 			<Route path="/Contact" element={<Contact />}></Route>
-			<Route path="/Profile" element={<ProfilePage/>} />
-			<Route path="/Profile2" element={<Ash />} />
+			<Route path="/Profile" element={<ProfilePage />} />
 			<Route path="/Authentication" element={<AuthPage />} />
 			<Route path="/Registration" element={<AuthPage />} />
 			<Route path="/ResetPassword" element={<ForgotPassword />} />

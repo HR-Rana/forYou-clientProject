@@ -779,7 +779,7 @@ form input[type=submit] {
 
 
 /* investment page */
-.verified-member-highlights {
+.investment-page .verified-member-highlights {
     padding: 15px 0;
     background-color: var(--gostWhite);
 }
@@ -822,8 +822,54 @@ form input[type=submit] {
 
 
 
+.investment-page .calcultation-deposit-interest{
+    padding: 65px 0;
+}
+.investment-page .aboutInvestCommission {
+    width: 48%;
+}
 
+.investment-page .aboutInvestCommission {
+    width: 48%;
+}
 
+.investment-page .calculate-invest-commission {
+    width: 48%;
+}
+.investment-page .calculation-inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.investment-page .calculation-inputs .amount{
+   width: 48%;
+   padding: 15px;
+}
+.investment-page .calculation-inputs input{
+   width: 100%;
+   padding: 15px;
+}
+.investment-page .calculation-inputs .month{
+   width: 48%;
+   padding: 15px;
+}
+.investment-page .calculation-inputs select{
+   width: 100%;
+   padding: 15px;
+   outline: none;
+}
+.investment-page .calculation-inputs option{
+   width: 100%;
+   padding:15px;
+   font-size: 18px;
+   margin: 10px 0;
+}
+.investment-page .calculate-invest-commission button{
+    width: 100%;
+  background-color: var(--RoyalBlue);
+  color: white;
+  margin-top: 15px;
+}
 
 
 
@@ -917,11 +963,13 @@ form input[type=submit] {
     margin: 0 !important;
     background-color: var(--gostWhite);
 }
+
 .profile-page-layout {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 .profile-page-layout .ProfileSidebar {
     width: 100%;
     padding: 0;
@@ -932,9 +980,11 @@ form input[type=submit] {
 .profile-page .react-tabs {
     display: flex;
 }
-.profile-page .react-tabs__tab-list{
+
+.profile-page .react-tabs__tab-list {
     border-bottom: none;
 }
+
 .profile-page-layout .sidebar-box {
     position: sticky;
     top: 0;
@@ -1072,13 +1122,13 @@ form input[type=submit] {
 
 /* Auth Page */
 .Authentication-page {
-    justify-content:center;
+    justify-content: center;
     padding: 25px;
 }
 
 .Authentication-page .log-reg-button {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding: 25px 0;
 }
 
@@ -1205,12 +1255,14 @@ form input[type=submit] {
 .error-page {
     padding: 25px 0;
 }
+
 .error-page p {
     color: var(--BrownColor);
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
 }
+
 .error-page img {
     width: 50%;
     margin: auto auto;
@@ -1237,18 +1289,22 @@ footer {
     padding: 25px;
     color: rgb(191, 191, 191);
 }
+
 footer .footer-content .text {
     padding-top: 15px;
 }
+
 footer .footer-content .content {
     width: 22%;
     text-align: left;
 }
+
 footer .footer-content .nav-items li {
     width: 42%;
     text-align: left;
     line-height: 30px;
 }
+
 footer .footer-content .nav-items li a:hover {
     color: white;
     transform: translateY(55px);
@@ -1272,16 +1328,19 @@ footer .social-icons svg {
     cursor: pointer;
     margin: 7px 0;
 }
+
 footer .footer-content .address {
     list-style: none;
     text-align: left;
     line-height: 35px;
 }
+
 footer .address li {
     display: flex;
     height: 100%;
     align-items: center;
 }
+
 footer .address li svg {
     width: 20px;
     height: 20px;
@@ -1291,6 +1350,7 @@ footer .address li svg {
     display: flex;
     align-self: center;
 }
+
 footer p {
     font-size: 14px;
 }

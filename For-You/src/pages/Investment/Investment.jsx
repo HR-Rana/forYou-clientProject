@@ -3,12 +3,13 @@ import img1 from "../../assets/images/02.jpg";
 import img2 from "../../assets/images/03.jpg";
 import img3 from "../../assets/images/04.jpg";
 import { Link } from "react-router-dom";
+import CalculationMainDesposit from "./Sections/CalculationMainDesposit";
 
 
 export default function Investment() {
 	return (
 		<div className="investment-page">
-			<div className="container-fluid">
+			<div className="">
 				<div className="verified-member-highlights">
 					<h4>
 						<Link to={""}>
@@ -24,6 +25,9 @@ export default function Investment() {
 						</Link>
 					</h4>
 				</div>
+				<section>
+					<CalculationMainDesposit/>
+				</section>
 			</div>
 		</div>
 	);
