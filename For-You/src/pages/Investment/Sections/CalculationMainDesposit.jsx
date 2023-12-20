@@ -19,13 +19,26 @@ export default function CalculationMainDesposit() {
 					<div className="calculate-invest-commission">
 						<span className="calculation-inputs">
 							<div className="amount">
-								<input type="number" placeholder="type any amount of Investment" />
+								<input
+									type="number"
+									placeholder="type any amount of Investment"
+								/>
 							</div>
 							<div className="month">
-								<select name="" id="">
-									<option value="">3-Months</option>
-									<option value="">6-Months</option>
-									<option value="">1-year</option>
+								<select
+									onChange={(e) => {
+										console.log(e.target.value);
+									}}
+								>
+									<option value="3 months">
+										<span>3-Months</span>
+									</option>
+									<option value="6 months">
+										<span>6-Months</span>
+									</option>
+									<option value="1 year">
+										<span>1-year</span>
+									</option>
 								</select>
 							</div>
 						</span>
@@ -36,7 +49,11 @@ export default function CalculationMainDesposit() {
 							</p>
 						</div>
 
-                        <span><Link to={""}><button>Let's start an Invest</button></Link></span>
+						<span>
+							<Link to={""}>
+								<button>Let's start an Invest</button>
+							</Link>
+						</span>
 					</div>
 				</div>
 			</div>

@@ -858,11 +858,9 @@ form input[type=submit] {
    padding: 15px;
    outline: none;
 }
-.investment-page .calculation-inputs option{
-   width: 100%;
-   padding:15px;
-   font-size: 18px;
-   margin: 10px 0;
+.investment-page .calculation-inputs select option{
+   font-size: 16px;
+   padding: 25px !important;
 }
 .investment-page .calculate-invest-commission button{
     width: 100%;
@@ -871,6 +869,12 @@ form input[type=submit] {
   margin-top: 15px;
 }
 
+.investment-page .WhatIs-investSection .invest-description{
+    width: 48%;
+}
+.investment-page .WhatIs-investSection .invest-describe-img{
+    width: 48%;
+}
 
 
 

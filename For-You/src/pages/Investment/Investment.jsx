@@ -4,6 +4,7 @@ import img2 from "../../assets/images/03.jpg";
 import img3 from "../../assets/images/04.jpg";
 import { Link } from "react-router-dom";
 import CalculationMainDesposit from "./Sections/CalculationMainDesposit";
+import WhatIsInvest from "./Sections/whatIsInvest";
 
 
 export default function Investment() {
@@ -27,6 +28,9 @@ export default function Investment() {
 				</div>
 				<section>
 					<CalculationMainDesposit/>
+				</section>
+				<section>
+					<WhatIsInvest/>
 				</section>
 			</div>
 		</div>
