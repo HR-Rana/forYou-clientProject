@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import CalculationMainDesposit from "./Sections/CalculationMainDesposit";
 import WhatIsInvest from "./Sections/whatIsInvest";
 
-
 export default function Investment() {
 	return (
 		<div className="investment-page">
@@ -27,10 +26,10 @@ export default function Investment() {
 					</h4>
 				</div>
 				<section>
-					<CalculationMainDesposit/>
+					<WhatIsInvest />
 				</section>
 				<section>
-					<WhatIsInvest/>
+					<CalculationMainDesposit />
 				</section>
 			</div>
 		</div>

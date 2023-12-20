@@ -7,13 +7,10 @@ export default function CalculationMainDesposit() {
 			<div className="container-fluid">
 				<div className="flex-box">
 					<div className="aboutInvestCommission">
-						<h3>Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
+						<h3>Our Basic Interst Rate</h3>
 						<br />
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Doloribus, odit. A alias ipsam unde, magni non quo quod in
-							sapiente ratione iure dolorem ea repellat suscipit delectus
-							doloremque. Ab, debitis!
+						  Hey!, we have been Providing 2 kind of interst base on investment for month or year. there is our Basic Interst Rate is <span>{"05%"}</span> on every Investment, and other one is, sometimes we provide several offer About Investment. So Let's have look here how much you will get Profit by your Imagination Investment amount with our basic normal interst rate..let's check it to The Input boxs..
 						</p>
 					</div>
 					<div className="calculate-invest-commission">
@@ -21,7 +18,7 @@ export default function CalculationMainDesposit() {
 							<div className="amount">
 								<input
 									type="number"
-									placeholder="type any amount of Investment"
+									placeholder="Type any Amount"
 								/>
 							</div>
 							<div className="month">
@@ -30,6 +27,9 @@ export default function CalculationMainDesposit() {
 										console.log(e.target.value);
 									}}
 								>
+									<option disabled>
+										<span>Select a Option</span>
+									</option>
 									<option value="3 months">
 										<span>3-Months</span>
 									</option>

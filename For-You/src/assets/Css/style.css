@@ -822,11 +822,18 @@ form input[type=submit] {
 
 
 
-.investment-page .calcultation-deposit-interest{
+.investment-page .calcultation-deposit-interest {
     padding: 65px 0;
+    background-color: var(--gostWhite);
 }
+
 .investment-page .aboutInvestCommission {
     width: 48%;
+}
+.investment-page .aboutInvestCommission p span{
+    color: var(--BrownColor);
+    font-style: bold;
+    font-size: 22px;
 }
 
 .investment-page .aboutInvestCommission {
@@ -836,43 +843,67 @@ form input[type=submit] {
 .investment-page .calculate-invest-commission {
     width: 48%;
 }
-.investment-page .calculation-inputs{
+
+.investment-page .calculation-inputs {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.investment-page .calculation-inputs .amount{
-   width: 48%;
-   padding: 15px;
-}
-.investment-page .calculation-inputs input{
-   width: 100%;
-   padding: 15px;
-}
-.investment-page .calculation-inputs .month{
-   width: 48%;
-   padding: 15px;
-}
-.investment-page .calculation-inputs select{
-   width: 100%;
-   padding: 15px;
-   outline: none;
-}
-.investment-page .calculation-inputs select option{
-   font-size: 16px;
-   padding: 25px !important;
-}
-.investment-page .calculate-invest-commission button{
-    width: 100%;
-  background-color: var(--RoyalBlue);
-  color: white;
-  margin-top: 15px;
+    
 }
 
-.investment-page .WhatIs-investSection .invest-description{
+.investment-page .calculation-inputs .amount {
     width: 48%;
+    padding: 15px;
+    
 }
-.investment-page .WhatIs-investSection .invest-describe-img{
+
+.investment-page .calculation-inputs input {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.investment-page .calculation-inputs .month {
+    width: 48%;
+    padding: 15px;
+    
+}
+
+.investment-page .calculation-inputs select {
+    width: 100%;
+    padding: 15px;
+    outline: none;
+    font-size: 18px;
+}
+
+.investment-page .calculation-inputs select option {
+    font-size: 16px;
+    padding: 25px !important;
+}
+
+.investment-page .calculate-invest-commission button {
+    width: 100%;
+    background-color: var(--RoyalBlue);
+    color: white;
+    margin-top: 15px;
+}
+
+.investment-page .WhatIs-investSection{
+    padding: 50px 0;
+}
+.investment-page .WhatIs-investSection .invest-description {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+   align-self: center;
+}
+
+.investment-page .WhatIs-investSection .invest-description h3 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.investment-page .WhatIs-investSection .invest-describe-img {
     width: 48%;
 }
 

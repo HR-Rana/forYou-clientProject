@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../../assets/images/time and money.jpg'
+import img from '../../../assets/images/money tree.jpg'
 
 export default function WhatIsInvest() {
   return (
