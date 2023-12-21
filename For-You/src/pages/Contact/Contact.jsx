@@ -1,5 +1,6 @@
 import React from 'react'
 import ContactForm from './ContactForm/ContactForm'
+import Faq from '../FAQ/Faq'
 
 export default function Contact() {
   return (
@@ -11,6 +12,9 @@ export default function Contact() {
             </div>
             <section>
                 <ContactForm/>
+            </section>
+            <section>
+              <Faq/>
             </section>
         </div>
     </div>

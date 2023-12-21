@@ -1,6 +1,7 @@
 import React from "react";
 import AboutTerms from "./Sections/About-Terms-section/AboutTerms";
 import AboutUs from "./Sections/About Us/AboutUs";
+import MissionAndVission from "./Sections/Mission/MissionAndVission";
 
 export default function About() {
 	return (
@@ -10,6 +11,9 @@ export default function About() {
 			</section>
 			<section>
 				<AboutTerms />
+			</section>
+			<section>
+				<MissionAndVission/>
 			</section>
 		</div>
 	);
