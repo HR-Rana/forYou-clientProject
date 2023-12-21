@@ -6,6 +6,7 @@ import Advantage from "./Advantage/Advantage";
 import Team from "./Team/Team";
 import ChooseUs from "./Why-chooseUs/ChooseUs";
 import HowWorks from "./HowItWorks/HowWorks";
+import Faq from "../FAQ/Faq";
 
 export default function Home() {
 	return (
@@ -29,7 +30,9 @@ export default function Home() {
 			<section>
 				<Team />
 			</section>
-
+			<section>
+				<Faq/>
+			</section>
 		</div>
 	);
 }
