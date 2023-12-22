@@ -46,7 +46,7 @@ export default function LatestTransition() {
 			<div className="transaction-short-view">
 				{daily ? (
 					<span className={{ margin: daily ? "0 auto" : "0px" }}>
-						<MonthlyTransition prop={daily} />
+						<MonthlyTransition />
 					</span>
 				) : (
 					<span style={{ margin: daily ? "0 auto" : "0" }}>

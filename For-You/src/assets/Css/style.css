@@ -443,6 +443,52 @@ form input[type=submit] {
 
 
 
+/* deposit Transaction page */
+.total-transaction-withdraw-page .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+
+}
+
+.total-transaction-withdraw-page .button button {
+    width: 15%;
+    margin: 15px 10px;
+    padding: 10px 25px;
+    box-shadow: var(--boxShadow);
+}
+.total-transaction-withdraw-page h3{
+    font-size: 26px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.Deposit-transaction-history {
+    padding: 50px 0;
+    background-color: var(--gostWhite);
+
+}
+
+
+.totalWithdraw-history {
+    padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -697,7 +743,7 @@ form input[type=submit] {
     width: 48%;
 }
 
-.Faq-section .questionAndAnswer h4{
+.Faq-section .questionAndAnswer h4 {
     position: relative;
 }
 
@@ -707,8 +753,9 @@ form input[type=submit] {
     right: 5px;
     color: var(--BrownColor);
 }
-.Faq-section .questionAndAnswer p{
-  padding: 10px;
+
+.Faq-section .questionAndAnswer p {
+    padding: 10px;
 }
 
 

@@ -10,7 +10,7 @@ import img8 from "./../../assets/images/08.jpg";
 import img9 from "./../../assets/images/09.jpg";
 import img10 from "./../../assets/images/10.jpg";
 
-export default function MonthlyTransition(daily) {
+export default function MonthlyTransition() {
 	return (
 		<div className="transaction" style={{ transition:".5s"}}>
 			<table>
