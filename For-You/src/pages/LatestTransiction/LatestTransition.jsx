@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 export default function LatestTransition() {
 	const [daily, setMonthly] = useState(false);
 
-
-
 	return (
 		<div className="latest-transaction">
 			<div className="title">
@@ -22,7 +20,7 @@ export default function LatestTransition() {
 			<div className="button">
 				<button
 					style={{
-						backgroundColor: daily? "" : "brown",
+						backgroundColor: daily ? "" : "brown",
 						color: daily ? "" : "white",
 					}}
 					onClick={(e) => {
@@ -47,18 +45,18 @@ export default function LatestTransition() {
 			</div>
 			<div className="transaction-short-view">
 				{daily ? (
-					<span className={{ margin: daily? "0 auto" : "0px"}}>
+					<span className={{ margin: daily ? "0 auto" : "0px" }}>
 						<MonthlyTransition prop={daily} />
 					</span>
 				) : (
-					<span style={{ margin: daily? "0 auto" : "0" }}>
+					<span style={{ margin: daily ? "0 auto" : "0" }}>
 						<DailyTransition />
 					</span>
 				)}
 			</div>
-			<Link to={'/Investment'}><p>See More Transaction {'>>'} </p></Link>
+			<Link to={"/TotalTrans-withdraws"}>
+				<p>See More Transaction {">>"} </p>
+			</Link>
 		</div>
 	);
 }
-
-

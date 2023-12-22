@@ -9,6 +9,7 @@ import Error from "../../pages/ErrorPage/Error";
 import AuthPage from "../../pages/AuthPage/AuthPage";
 import ForgotPassword from "../../pages/AuthPage/ForgotPassword";
 import ProfilePage from "../../pages/UserProfile/ProfilePage";
+import TotalTransAndWithdraw from "../../pages/LatestTransiction/TotalTransAndWithdraw";
 
 export default function Routing() {
 	return (
@@ -17,7 +18,7 @@ export default function Routing() {
 			<Route path="/" element={<Home />}></Route>
 			<Route path="/about" element={<About />}></Route>
 			<Route path="/investment" element={<Investment />}></Route>
-			{/* <Route path='/Blog' element={<Blog/>}></Route> */}
+			<Route path="/TotalTrans-withdraws" element={<TotalTransAndWithdraw/>}></Route>
 			<Route path="/Team-members" element={<Team />}></Route>
 			<Route path="/Contact" element={<Contact />}></Route>
 			<Route path="/Profile" element={<ProfilePage />} />
