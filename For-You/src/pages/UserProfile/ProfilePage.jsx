@@ -33,7 +33,7 @@ export default function ProfilePage() {
 								<h4>User Name</h4>
 							</div>
 
-							<div className="profile-nav">
+							<div className="profile-sidebar-nav">
 								<ul>
 									<Tab>
 										<li>
@@ -120,7 +120,7 @@ export default function ProfilePage() {
 							</ul>
 						</div>
 					</TabList>
-					<div className="ProfileContents">
+					<div className="ProfilePage-Contents">
 						<TabPanel>
 							<Profile />
 						</TabPanel>
