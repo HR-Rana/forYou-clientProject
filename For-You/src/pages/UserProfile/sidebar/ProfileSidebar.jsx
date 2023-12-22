@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import profile from "../../../assets/images/02.jpg";
-import { Tab, TabList } from "react-tabs";
+import { Tab,Tabs,TabPanel, TabList } from "react-tabs";
 
 import { IoLogOut, IoNotificationsCircleSharp } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
@@ -114,3 +114,4 @@ export default function ProfileSidebar() {
 		</TabList>
 	);
 }
+

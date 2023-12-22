@@ -25,105 +25,102 @@ export default function ProfilePage() {
 			<div className="profile-page-layout">
 				<Tabs>
 					<TabList>
-						<div className="ProfileSidebar">
-							<div className="sidebar-box">
-								<div className="user-name">
-									<span>
-										<img src={profile} alt="profile" />
-									</span>
-									<h4>User Name</h4>
-								</div>
+						<div className="sidebar-box">
+							<div className="user-name">
+								<span>
+									<img src={profile} alt="profile" />
+								</span>
+								<h4>User Name</h4>
+							</div>
 
-								<div className="profile-nav">
-									<ul>
-										<Tab>
-											<li>
-												{" "}
-												<span>
-													<CgProfile />
-												</span>
-												<NavLink to={""} />
-												Profile
-											</li>
-										</Tab>
-										<Tab>
-											<li>
-												<span>
-													<RiMoneyDollarCircleFill />
-												</span>
-												<NavLink to={""} />
-												Running Deposit
-											</li>
-										</Tab>
-										<Tab>
-											<li>
-												<span>
-													<FaMoneyBills />
-												</span>
-												<NavLink to={""} />
-												Matured Deposit
-											</li>
-										</Tab>
-										<Tab>
-											<li>
-												<span>
-													<IoNotificationsCircleSharp />
-												</span>
-												<NavLink to={""} />
-												Notification
-											</li>
-										</Tab>
-										<Tab>
-											<li>
-												<span>
-													<FaHistory />
-												</span>
-												<NavLink to={""} />
-												Transaction History
-											</li>
-										</Tab>
-										<Tab>
-											<li>
-												<span>
-													<BiMoneyWithdraw />
-												</span>
-												<NavLink to={""} />
-												Total Widthdraw
-											</li>
-										</Tab>
-										<Tab>
-											<li>
-												<span>
-													<AiFillBank />
-												</span>
-												<NavLink to={""} />
-												Total Diposit
-											</li>
-										</Tab>
-										<Tab>
-											<li>
-												<span>
-													<FaMoneyBillTrendUp />
-												</span>
-												<NavLink to={""} />
-												Withdraw History
-											</li>
-										</Tab>
-									</ul>
-								</div>
-								<ul className="sidebar-log-out">
-									<li>
-										<span>
-											<IoLogOut />
-										</span>{" "}
-										<Link to={""}>Logout</Link>
-									</li>
+							<div className="profile-nav">
+								<ul>
+									<Tab>
+										<li>
+											{" "}
+											<span>
+												<CgProfile />
+											</span>
+											<NavLink to={""} />
+											Profile
+										</li>
+									</Tab>
+									<Tab>
+										<li>
+											<span>
+												<RiMoneyDollarCircleFill />
+											</span>
+											<NavLink to={""} />
+											Running Deposit
+										</li>
+									</Tab>
+									<Tab>
+										<li>
+											<span>
+												<FaMoneyBills />
+											</span>
+											<NavLink to={""} />
+											Matured Deposit
+										</li>
+									</Tab>
+									<Tab>
+										<li>
+											<span>
+												<IoNotificationsCircleSharp />
+											</span>
+											<NavLink to={""} />
+											Notification
+										</li>
+									</Tab>
+									<Tab>
+										<li>
+											<span>
+												<FaHistory />
+											</span>
+											<NavLink to={""} />
+											Transaction History
+										</li>
+									</Tab>
+									<Tab>
+										<li>
+											<span>
+												<BiMoneyWithdraw />
+											</span>
+											<NavLink to={""} />
+											Total Widthdraw
+										</li>
+									</Tab>
+									<Tab>
+										<li>
+											<span>
+												<AiFillBank />
+											</span>
+											<NavLink to={""} />
+											Total Diposit
+										</li>
+									</Tab>
+									<Tab>
+										<li>
+											<span>
+												<FaMoneyBillTrendUp />
+											</span>
+											<NavLink to={""} />
+											Withdraw History
+										</li>
+									</Tab>
 								</ul>
 							</div>
+							<ul className="sidebar-log-out">
+								<li>
+									<span>
+										<IoLogOut />
+									</span>{" "}
+									<Link to={""}>Logout</Link>
+								</li>
+							</ul>
 						</div>
 					</TabList>
-
-					<div>
+					<div className="ProfileContents">
 						<TabPanel>
 							<Profile />
 						</TabPanel>

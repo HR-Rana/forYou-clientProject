@@ -1068,8 +1068,8 @@ form input[type=submit] {
 
 /* profile page */
 .profile-page {
-    padding: 0 !important;
-    margin: 0 !important;
+    padding: 0 ;
+    margin: 0 ;
     background-color: var(--gostWhite);
 }
 
@@ -1079,6 +1079,24 @@ form input[type=submit] {
     justify-content: space-between;
 }
 
+.profile-page .react-tabs{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--RoyalBlue);
+}
+.profile-page .react-tabs__tab-list {
+    width: 20%;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+/* 
 .profile-page-layout .ProfileSidebar {
     width: 100%;
     padding: 0;
@@ -1087,10 +1105,12 @@ form input[type=submit] {
 }
 
 .profile-page .react-tabs {
+    width: 100%;
     display: flex;
 }
 
 .profile-page .react-tabs__tab-list {
+    width: 100%;
     border-bottom: none;
 }
 
@@ -1144,7 +1164,6 @@ form input[type=submit] {
 
 .profile-page-layout .sidebar-box ul {
     width: 100%;
-    background-color: red;
     padding: 10px 0;
     background-color: var(--whiteColor);
     box-shadow: var(--boxShadow);
@@ -1222,10 +1241,23 @@ form input[type=submit] {
     justify-content: space-between;
 }
 
+.profile-page .ProfileContents {
+    width: 80%;
+    background-color: royalblue;
+} */
 
 /* .ProfileContents p{
     background-color: red;
 } */
+
+
+
+
+
+
+
+
+
 
 
 
