@@ -18,8 +18,8 @@ export default function WithdrawTrans() {
 						<button
 							onClick={(e) => setWHistory(false)}
 							style={{
-								backgroundColor: setWHistory ? "brown" : "black",
-								color: WHistory ? "red " : "black",
+								backgroundColor: !WHistory ? "brown" : " ",
+								color: WHistory ? " " : "white",
 							}}
 						>
 							Last Week
@@ -29,11 +29,11 @@ export default function WithdrawTrans() {
 								setWHistory(true);
 							}}
 							style={{
-								backgroundColor: setWHistory ? "green" : "yellow",
-								color: WHistory ? "white" : "black",
+								backgroundColor: WHistory ? "brown" : "",
+								color: WHistory ? "white" : "",
 							}}
 						>
-							Last month
+							Last 30Days
 						</button>
 					</div>
 					<div className="widthraws-components transaction-short-view">
