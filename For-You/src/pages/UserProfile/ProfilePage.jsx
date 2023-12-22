@@ -18,6 +18,8 @@ import MaturedDeposit from "./Contents/ProfilePages/MaturedDeposit";
 import RunningDeposit from "./Contents/ProfilePages/RunningDeposit";
 import LoanTransaction from "./Contents/ProfilePages/LoanTransaction";
 import Notification from "./Contents/ProfilePages/Notification";
+import Deposits from "./Contents/ProfilePages/Deposits";
+import WithdrawHistory from "./Contents/ProfilePages/WithdrawHistory";
 
 export default function ProfilePage() {
 	return (
@@ -37,85 +39,94 @@ export default function ProfilePage() {
 								<ul>
 									<Tab>
 										<li>
-											{" "}
-											<span>
-												<CgProfile />
-											</span>
-											<NavLink to={""} />
-											Profile
+											<NavLink>
+												<span>
+													<CgProfile />
+												</span>
+												Profile
+											</NavLink>{" "}
 										</li>
 									</Tab>
 									<Tab>
 										<li>
-											<span>
-												<RiMoneyDollarCircleFill />
-											</span>
-											<NavLink to={""} />
-											Running Deposit
+											<NavLink>
+												<span>
+													<RiMoneyDollarCircleFill />
+												</span>
+												Running Deposit
+											</NavLink>
 										</li>
 									</Tab>
 									<Tab>
 										<li>
-											<span>
-												<FaMoneyBills />
-											</span>
-											<NavLink to={""} />
-											Matured Deposit
+											<NavLink>
+												<span>
+													<FaMoneyBills />
+												</span>
+												Matured Deposit
+											</NavLink>
 										</li>
 									</Tab>
 									<Tab>
 										<li>
-											<span>
-												<IoNotificationsCircleSharp />
-											</span>
-											<NavLink to={""} />
-											Notification
+											<NavLink>
+												<span>
+													<IoNotificationsCircleSharp />
+												</span>
+												Notification
+											</NavLink>
 										</li>
 									</Tab>
 									<Tab>
 										<li>
-											<span>
-												<FaHistory />
-											</span>
-											<NavLink to={""} />
-											Transaction History
+											<NavLink>
+												<span>
+													<FaHistory />
+												</span>
+												Transaction History
+											</NavLink>
 										</li>
 									</Tab>
 									<Tab>
 										<li>
-											<span>
-												<BiMoneyWithdraw />
-											</span>
-											<NavLink to={""} />
-											Total Widthdraw
+											<NavLink>
+												<span>
+													<BiMoneyWithdraw />
+												</span>
+												Total Widthdraw
+											</NavLink>
 										</li>
 									</Tab>
 									<Tab>
 										<li>
-											<span>
-												<AiFillBank />
-											</span>
-											<NavLink to={""} />
-											Total Diposit
+											<NavLink>
+												<span>
+													<AiFillBank />
+												</span>
+												Total Diposit
+											</NavLink>
 										</li>
 									</Tab>
 									<Tab>
 										<li>
-											<span>
-												<FaMoneyBillTrendUp />
-											</span>
-											<NavLink to={""} />
-											Withdraw History
+											<NavLink>
+												<span>
+													<FaMoneyBillTrendUp />
+												</span>
+												Withdraw History
+											</NavLink>
 										</li>
 									</Tab>
 								</ul>
 							</div>
 							<ul className="sidebar-log-out">
 								<li>
-									<span>
-										<IoLogOut />
-									</span>{" "}
-									<Link to={""}>Logout</Link>
+									<Link>
+										<span>
+											<IoLogOut />
+										</span>
+										Logout
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -125,7 +136,7 @@ export default function ProfilePage() {
 							<Profile />
 						</TabPanel>
 						<TabPanel>
-							<TransactionHistory />
+							<RunningDeposit />
 						</TabPanel>
 						<TabPanel>
 							<MaturedDeposit />
@@ -134,10 +145,13 @@ export default function ProfilePage() {
 							<Notification />
 						</TabPanel>
 						<TabPanel>
-							<RunningDeposit />
+							<TransactionHistory />
 						</TabPanel>
 						<TabPanel>
-							<RunningDeposit />
+							<WithdrawHistory />
+						</TabPanel>
+						<TabPanel>
+							<Deposits />
 						</TabPanel>
 						<TabPanel>
 							<LoanTransaction />
