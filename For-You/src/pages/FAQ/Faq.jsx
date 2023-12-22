@@ -1,10 +1,18 @@
 import React from "react";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa";
-import img from '../../assets/images/faq_graphic.jpg'
+import { FaAngleUp } from "react-icons/fa";
+import img from "../../assets/images/faq_graphic.jpg";
 
 export default function Faq() {
 	const [openFaq, setOff] = useState(0);
+
+	const HandleFAQ = (i) => {
+		setOff(i);
+		if (openFaq === i) {
+			setOff(!openFaq);
+		}
+	};
 
 	const Faqs = [
 		{
@@ -41,23 +49,33 @@ export default function Faq() {
 									<div className="questionAndAnswer" key={index}>
 										<span
 											onClick={(e) => {
-												setOff(!openFaq);
+												HandleFAQ(index);
 											}}
 										>
 											<h4>
-												{items.qus} <span style={{transform:openFaq? "trasnlate(180deg)" : "", color:"brown"}}><FaAngleDown/></span>
+												{items.qus}
+												{/* <span style={{transform:openFaq? "trasnlate(180deg)" : "", color:"brown"}}></span> */}
+												{openFaq == index ? (
+													<span>
+														<FaAngleUp />
+													</span>
+												) : (
+													<span>
+														<FaAngleDown />
+													</span>
+												)}
 											</h4>
 										</span>
-										{openFaq ? <p>{items.ans}</p> : ""}
+										{openFaq == index ? <p className="answer">{items.ans}</p> : ""}
 									</div>
 								);
 							})}
 						</div>
 					</div>
 
-                    <div className="Faq-img">
-                        <img src={img} alt="faq-img" />
-                    </div>
+					<div className="Faq-img">
+						<img src={img} alt="faq-img" />
+					</div>
 				</div>
 			</div>
 		</div>

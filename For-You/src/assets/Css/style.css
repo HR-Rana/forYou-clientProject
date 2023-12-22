@@ -697,7 +697,19 @@ form input[type=submit] {
     width: 48%;
 }
 
+.Faq-section .questionAndAnswer h4{
+    position: relative;
+}
 
+.Faq-section .questionAndAnswer h4 span {
+    position: absolute;
+    top: 35%;
+    right: 5px;
+    color: var(--BrownColor);
+}
+.Faq-section .questionAndAnswer p{
+  padding: 10px;
+}
 
 
 
@@ -1156,12 +1168,15 @@ form input[type=submit] {
     -ms-border-radius: 0px 5px 5px 0px;
     -o-border-radius: 0px 5px 5px 0px;
 }
-.profile-page .react-tabs__tab--selected a{
+
+.profile-page .react-tabs__tab--selected a {
     color: white !important;
 }
-.profile-page .react-tabs__tab-list{
+
+.profile-page .react-tabs__tab-list {
     border: none;
 }
+
 .profile-page .profile-sidebar-nav ul li span {
     width: 30px;
     height: 25px;
@@ -1215,9 +1230,10 @@ form input[type=submit] {
     justify-content: center;
     text-transform: capitalize;
 }
+
 .profile-page .sidebar-log-out li a:hover {
     color: red;
-   
+
 }
 
 
@@ -1359,7 +1375,7 @@ form input[type=submit] {
 
 
 /* pagination */
-.pagination{
+.pagination {
     display: flex;
     align-items: center;
     justify-content: center;
