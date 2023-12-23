@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;700&family=Maven+Pro:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;600;700&family=Maven+Pro:wght@400;500;600;700&family=Open+Sans:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,600;1,700&display=swap'); */
 
 * {
     padding: 0;
@@ -140,7 +140,7 @@ form input[type=submit] {
 /* Navbar styles */
 .top-navbar {
     background-color: black;
-    
+
 }
 
 .download-app-title {
@@ -292,6 +292,7 @@ form input[type=submit] {
     font-size: 30px;
     color: var(--BrownColor);
 }
+
 .Project-done-section .total-investor p {
     font-size: 17px;
 }
@@ -346,6 +347,93 @@ form input[type=submit] {
     margin-top: 15px;
     font-size: 17px;
 }
+
+
+
+
+
+
+
+
+/* offer Section styles */
+
+
+.investment-offerSection {
+    padding: 75px 0;
+}
+
+.investment-offerSection .offer {
+    width: 32%;
+    height: 450px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.investment-offerSection .offer:nth-child(1) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.751), rgba(0, 0, 0, 0.814)), url('../../assets/images/offer(5).jpg');
+    background-position: center center;
+    background-size: contain;
+}
+
+.investment-offerSection .offer:nth-child(2) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.708), rgba(0, 0, 0, 0.834)), url('../../assets/images/Gold.jpg');
+    background-position: center center;
+    background-size: contain;
+
+}
+
+.investment-offerSection .offer:nth-child(3) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.62)), url('../../assets/images/Platinum.jpg');
+    background-position: center top;
+    background-size: contain;
+}
+
+.offer-card-area {
+    padding: 25px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0px 0px 5px rgba(94, 104, 121, .17);
+}
+
+.offer-card-area .title {
+    padding: 20px 0;
+}
+
+.offer-card-area .body {
+    padding: 20px 0;
+}
+
+.offer-card-area .body h3 {
+    font-size: 28px;
+    font-style: italic;
+}
+
+.offer-card-area .body span {
+    color: red;
+    font-weight: 900;
+}
+
+.offer-card-area .footer {
+    padding: 20px 0;
+}
+
+.offer-card-area button {
+    width: 50%;
+    /* padding: 15px 20px; */
+    background-color: var(--RoyalBlue);
+    color: white;
+}
+
+
+
+
 
 
 
@@ -464,11 +552,13 @@ form input[type=submit] {
     padding: 10px 25px;
     box-shadow: var(--boxShadow);
 }
-.total-transaction-withdraw-page h3{
+
+.total-transaction-withdraw-page h3 {
     font-size: 26px;
     text-transform: capitalize;
     margin: 0;
 }
+
 .Deposit-transaction-history {
     padding: 50px 0;
     background-color: var(--gostWhite);
@@ -846,7 +936,7 @@ form input[type=submit] {
     display: inline-block;
     padding: 25px 15px;
     text-align: left;
-    margin: 10px ;
+    margin: 10px;
     background-color: var(--gostWhite);
     box-shadow: 0px 0px 3px rgba(94, 104, 121, .17);
 }
@@ -1090,7 +1180,7 @@ form input[type=submit] {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
-   box-shadow: 0px 0px 3px rgba(94, 104, 121, .17);
+    box-shadow: 0px 0px 3px rgba(94, 104, 121, .17);
     border: none;
     letter-spacing: 1px;
     font-size: 16px;
