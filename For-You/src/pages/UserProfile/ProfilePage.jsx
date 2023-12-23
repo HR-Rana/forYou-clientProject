@@ -1,6 +1,4 @@
 import React from "react";
-import ProfileSidebar from "./sidebar/ProfileSidebar";
-import ProfileContents from "./Contents/ProfileContents";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import { Link, NavLink } from "react-router-dom";
@@ -20,6 +18,8 @@ import LoanTransaction from "./Contents/ProfilePages/LoanTransaction";
 import Notification from "./Contents/ProfilePages/Notification";
 import Deposits from "./Contents/ProfilePages/Deposits";
 import WithdrawHistory from "./Contents/ProfilePages/WithdrawHistory";
+
+import './Contents/ProfilePage.css'
 
 export default function ProfilePage() {
 	return (

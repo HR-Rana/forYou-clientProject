@@ -6,11 +6,11 @@ export default function InvestOffer() {
 		<div className="investment-offerSection">
 			<div className="container-fluid">
 				<div className="title">
-					<h3>We're offering to you</h3>
+					<h3>We're offering you</h3>
 				</div>
 
-				<div className="">
-					<div className="offer-card-box flex-box">
+				<div className="offer-card-box">
+					<div className="flex-box">
 						<div className="Silver-offer  offer">
 							<OfferCard
 								interst={"25%"}

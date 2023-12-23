@@ -395,40 +395,65 @@ form input[type=submit] {
     background-size: contain;
 }
 
+
+
+
+.offer-card-box {
+    display: flex;
+    align-items: center;
+    margin: 45px 0;
+}
+
+.offer-card-box .offer {
+    width: 32%;
+    display: flex;
+    align-items: center;
+    background-color: green;
+}
+
 .offer-card-area {
     padding: 25px;
     text-align: center;
     height: 100%;
     box-shadow: 0px 0px 5px rgba(94, 104, 121, .17);
+    align-items: center;
+ 
 }
 
+
 .offer-card-area .title {
+
     padding: 20px 0;
 }
 
 .offer-card-area .body {
     padding: 20px 0;
+    margin: auto auto;
 }
 
 .offer-card-area .body h3 {
-    font-size: 28px;
-    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
 .offer-card-area .body span {
-    color: red;
+    /* color: red; */
     font-weight: 900;
 }
 
 .offer-card-area .footer {
     padding: 20px 0;
+    position: relative;
+    bottom: 0%;
 }
 
 .offer-card-area button {
+    position: relative;
     width: 50%;
     /* padding: 15px 20px; */
     background-color: var(--RoyalBlue);
     color: white;
+    bottom: -10%;
 }
 
 
