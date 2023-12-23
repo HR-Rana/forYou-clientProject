@@ -5,6 +5,7 @@ export default function RunningDeposit() {
 		{
 			id: "01",
 			title: "Silver Plan",
+			invested: "09-07-2023",
 			mature: "05-02-2024",
 			interst: "25%",
 			invest: "50",
@@ -12,6 +13,7 @@ export default function RunningDeposit() {
 		{
 			id: "02",
 			title: "Platinum Plan",
+			invested: "09-07-2023",
 			mature: "05-02-2024",
 			interst: "75%",
 			invest: "1050",
