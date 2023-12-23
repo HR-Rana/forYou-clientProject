@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../../assets/images/money tree.jpg";
+import img1 from "../../../assets/images/money.jpg";
 
 export default function Advantage() {
 	return (

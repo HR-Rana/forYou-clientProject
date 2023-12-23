@@ -17,22 +17,22 @@ export default function Faq() {
 	const Faqs = [
 		{
 			id: "01",
-			qus: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+			qus: "Is this Company fake of Real?.",
 			ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rerum veritatis sit a obcaecati totam illo voluptas est dolore. Voluptatibus explicabo minima tenetur quos corrupti voluptatem illo accusamus sapiente numquam.",
 		},
 		{
 			id: "02",
-			qus: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+			qus: "Do you have any Validity?",
 			ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rerum veritatis sit a obcaecati totam illo voluptas est dolore. Voluptatibus explicabo minima tenetur quos corrupti voluptatem illo accusamus sapiente numquam.",
 		},
 		{
 			id: "03",
-			qus: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+			qus: "What if, though we wouldn't get Return our Money?",
 			ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rerum veritatis sit a obcaecati totam illo voluptas est dolore. Voluptatibus explicabo minima tenetur quos corrupti voluptatem illo accusamus sapiente numquam.",
 		},
 		{
 			id: "04",
-			qus: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+			qus: "How much secure this site with our investment?",
 			ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, rerum veritatis sit a obcaecati totam illo voluptas est dolore. Voluptatibus explicabo minima tenetur quos corrupti voluptatem illo accusamus sapiente numquam.",
 		},
 	];

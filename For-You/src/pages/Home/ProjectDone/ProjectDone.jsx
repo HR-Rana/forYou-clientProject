@@ -37,7 +37,7 @@ export default function ProjectDone() {
 						<h3>
 							<CountUp end={6000} />
 						</h3>
-						<p>Total Withdrawal Amount</p>
+						<p>Total Withdrawal Balance</p>
 					</div>
 				</div>
 			}

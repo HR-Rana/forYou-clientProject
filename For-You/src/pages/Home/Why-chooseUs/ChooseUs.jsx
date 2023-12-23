@@ -15,7 +15,7 @@ export default function ChooseUs() {
 						<h2>Why Choose us?</h2>
 						<ul>
 							<li>100% Secure Invest and Moneyback Gauarantee.</li>
-							<li>Verified by Bangladesh Governement</li>
+							<li>Verified by Bangladesh Governement authority.</li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
 							<li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>

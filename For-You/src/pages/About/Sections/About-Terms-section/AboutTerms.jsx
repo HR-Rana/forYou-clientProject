@@ -46,9 +46,9 @@ export default function AboutTerms() {
 							<div className="term-content" key={index}>
 								<h3>{title}</h3>
 								<p>{desc}</p>
-								<p>
+								{/* <p>
 									<Link to={link}>Read More</Link>
-								</p>
+								</p> */}
 							</div>
 						);
 					})}
