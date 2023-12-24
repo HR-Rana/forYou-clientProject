@@ -34,52 +34,70 @@
     border-bottom: .5px solid rgb(232, 232, 232);
 }
 
-.Running-deposit-page .flex-box {
+ .flex-box {
     width: 100%;
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
 }
 
-.Running-deposit-page .Deposits-items {
+ .Deposits-items {
     width: 48%;
     margin: 15px 0;
     padding: 25px 15px;
     background-color: var(--whiteColor);
 }
 
-.Running-deposit-page .Deposits-items h4 {
+ .Deposits-items h4 {
     text-align: center;
     margin-bottom: 15px;
 }
 
-.Running-deposit-page .Deposits-items p {
+ .Deposits-items p {
     font-size: 16px;
     line-height: 30px;
 }
-.Running-deposit-page .Deposits-items p span {
+ .Deposits-items p span {
    font-weight: 700;
    color: var(--BrownColor);
 }
 
-.Running-deposit-page .Deposits-items .buttons {
+ .Deposits-items .buttons {
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
 }
 
-.Running-deposit-page .Deposits-items button {
+ .Deposits-items button {
     width: 40%;
     font-size: 16px;
 }
 
-.Running-deposit-page .Deposits-items button:nth-child(1) {
+ .Deposits-items button:nth-child(1) {
     background-color: var(--BrownColor);
     color: var(--whiteColor);
 }
 
-.Running-deposit-page .Deposits-items button:nth-child(2) {
+ .Deposits-items button:nth-child(2) {
     background-color: var(--greenColor);
     color: var(--whiteColor);
     cursor: not-allowed;
+}
+
+
+
+
+/* Matured deposit page */
+
+.matureDeposit-page .Deposits-items{
+    background-color: rgba(0, 128, 0, 0.099);
+}
+.matureDeposit-page .deposit-body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+.matureDeposit-page .deposit-body p{
+   margin: 0px 10px;
 }
