@@ -560,6 +560,31 @@ form input[type=submit] {
 
 
 
+/* verified Users styles */
+
+.verified-Users table td:nth-child(3){
+    color: rgb(2, 213, 2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* deposit Transaction page */
