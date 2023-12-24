@@ -5,10 +5,11 @@ import { Link, NavLink } from "react-router-dom";
 import profile from "../../assets/images/02.jpg";
 import { CgProfile } from "react-icons/cg";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
-import { FaMoneyBillTrendUp, FaMoneyBills } from "react-icons/fa6";
+import { FaMoneyBills } from "react-icons/fa6";
 import { IoLogOut, IoNotificationsCircleSharp } from "react-icons/io5";
 import { FaHistory } from "react-icons/fa";
 import { BiMoneyWithdraw } from "react-icons/bi";
+import { MdVerified } from "react-icons/md";
 import { AiFillBank } from "react-icons/ai";
 import Profile from "./Contents/ProfilePages/Profile";
 import TransactionHistory from "./Contents/ProfilePages/TransactionHistory";
@@ -19,7 +20,8 @@ import Notification from "./Contents/ProfilePages/Notification";
 import Deposits from "./Contents/ProfilePages/Deposits";
 import WithdrawHistory from "./Contents/ProfilePages/WithdrawHistory";
 
-import './Contents/ProfilePage.css'
+import "./Contents/ProfilePage.css";
+import VerificationMember from "./Contents/ProfilePages/VerificationMember";
 
 export default function ProfilePage() {
 	return (
@@ -111,9 +113,9 @@ export default function ProfilePage() {
 										<li>
 											<NavLink>
 												<span>
-													<FaMoneyBillTrendUp />
+													<MdVerified />
 												</span>
-												Withdraw History
+												Verified memebership
 											</NavLink>
 										</li>
 									</Tab>
@@ -154,7 +156,7 @@ export default function ProfilePage() {
 							<Deposits />
 						</TabPanel>
 						<TabPanel>
-							<LoanTransaction />
+							<VerificationMember/>
 						</TabPanel>
 					</div>
 				</Tabs>

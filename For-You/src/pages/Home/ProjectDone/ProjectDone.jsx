@@ -13,30 +13,35 @@ export default function ProjectDone() {
 			}}
 		>
 			{count && (
-				<div className="Project-done-section flex-box container-fluid">
-					<div className="total-investor">
-						<h3>
-							<CountUp end={1000} />
-						</h3>
-						<p>Total Investor</p>
-					</div>
-					<div className="total-investor">
-						<h3>$
-							<CountUp end={10000} />
-						</h3>
-						<p>Last Week Deposit</p>
-					</div>
-					<div className="total-investor">
-						<h3>$
-							<CountUp end={26000} />
-						</h3>
-						<p>Total Deposit Balance</p>
-					</div>
-					<div className="total-investor">
-						<h3>$
-							<CountUp end={6000} />
-						</h3>
-						<p>Users total Withdrawn</p>
+				<div className="Project-done-section">
+					<div className="flex-box container-fluid">
+						<div className="total-investor">
+							<h3>
+								<CountUp end={1000} />
+							</h3>
+							<p>Total Investor</p>
+						</div>
+						<div className="total-investor">
+							<h3>
+								$
+								<CountUp end={10000} />
+							</h3>
+							<p>Last Week Deposit</p>
+						</div>
+						<div className="total-investor">
+							<h3>
+								$
+								<CountUp end={26000} />
+							</h3>
+							<p>Total Deposit Balance</p>
+						</div>
+						<div className="total-investor">
+							<h3>
+								$
+								<CountUp end={6000} />
+							</h3>
+							<p>Users total Withdrawn</p>
+						</div>
 					</div>
 				</div>
 			)}
