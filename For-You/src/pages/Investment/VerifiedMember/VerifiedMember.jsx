@@ -1,4 +1,5 @@
 import React from 'react'
+import VerifiedUserList from './VerifiedUserList'
 
 export default function VerifiedMember() {
   return (
@@ -7,8 +8,10 @@ export default function VerifiedMember() {
             <h3>Our Verified Users...</h3>
          </div>
          <section>
-            <div className="container">
-                
+            <div className="container-fluid">
+                <div>
+                    <VerifiedUserList/>
+                </div>
             </div>
          </section>
     </div>
