@@ -12,7 +12,7 @@ import img10 from "../../../assets/images/10.jpg";
 
 export default function VerifiedUserList() {
 	return (
-		<div className="verified-user-card">
+		<div className="verified-user-card ">
 			<table>
 				<thead>
 					<th>Name</th>
@@ -38,7 +38,7 @@ export default function VerifiedUserList() {
 						<h5> Verified</h5>
 					</td>
 					<td>
-						<h5> Bangladesh</h5>
+						<h5> England</h5>
 					</td>
 				</tr>
 				<tr>
@@ -80,7 +80,7 @@ export default function VerifiedUserList() {
 						<h5> Verified</h5>
 					</td>
 					<td>
-						<h5> Bangladesh</h5>
+						<h5>Saudi Arabia</h5>
 					</td>
 				</tr>
 				<tr>
@@ -122,7 +122,7 @@ export default function VerifiedUserList() {
 						<h5> Verified</h5>
 					</td>
 					<td>
-						<h5> Bangladesh</h5>
+						<h5>Italy</h5>
 					</td>
 				</tr>
 				<tr>
@@ -185,7 +185,7 @@ export default function VerifiedUserList() {
 						<h5> Verified</h5>
 					</td>
 					<td>
-						<h5> Bangladesh</h5>
+						<h5>Germany</h5>
 					</td>
 				</tr>
 				<tr>
@@ -227,7 +227,7 @@ export default function VerifiedUserList() {
 						<h5> Verified</h5>
 					</td>
 					<td>
-						<h5> Bangladesh</h5>
+						<h5>Poland</h5>
 					</td>
 				</tr>
 			</table>
