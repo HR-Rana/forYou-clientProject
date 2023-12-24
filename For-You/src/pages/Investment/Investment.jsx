@@ -12,7 +12,7 @@ export default function Investment() {
 			<div className="">
 				<div className="verified-member-highlights">
 					<h4>
-						<Link to={""}>
+						<Link to={"/Verifired-members"}>
 							<span>
 								<img src={img1} alt="" />
 								<img src={img2} alt="" />

@@ -10,6 +10,7 @@ import AuthPage from "../../pages/AuthPage/AuthPage";
 import ForgotPassword from "../../pages/AuthPage/ForgotPassword";
 import ProfilePage from "../../pages/UserProfile/ProfilePage";
 import TotalTransAndWithdraw from "../../pages/LatestTransiction/TotalTransAndWithdraw";
+import VerifiedMember from './../../pages/Investment/VerifiedMember/VerifiedMember';
 
 export default function Routing() {
 	return (
@@ -18,6 +19,7 @@ export default function Routing() {
 			<Route path="/" element={<Home />}></Route>
 			<Route path="/about" element={<About />}></Route>
 			<Route path="/investment" element={<Investment />}></Route>
+			<Route path="/Verifired-members" element={<VerifiedMember/>}/>
 			<Route path="/TotalTrans-withdraws" element={<TotalTransAndWithdraw/>}></Route>
 			<Route path="/Team-members" element={<Team />}></Route>
 			<Route path="/Contact" element={<Contact />}></Route>
