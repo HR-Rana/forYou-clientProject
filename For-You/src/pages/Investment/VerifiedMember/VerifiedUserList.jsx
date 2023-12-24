@@ -13,6 +13,11 @@ import img10 from "../../../assets/images/10.jpg";
 export default function VerifiedUserList() {
 	return (
 		<div className="verified-user-card ">
+			<span>
+				<h3>
+					Total <span>256</span> Members are Verified.
+				</h3>
+			</span>
 			<table>
 				<thead>
 					<th>Name</th>

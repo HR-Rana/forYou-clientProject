@@ -7,11 +7,12 @@ export default function VerifiedMember() {
 	return (
 		<div className="verified-member-page">
 			<div className="page-title">
-				<h3>Our Verified Users...</h3>
+				<h2>Our Verified Users...</h2>
 			</div>
 			<section>
 				<div className="container-fluid verified-Users transaction-short-view">
 					<div className="transaction">
+                       
 						<VerifiedUserList />
 						<div className="pagination">
 							<Stack spacing={2}>
