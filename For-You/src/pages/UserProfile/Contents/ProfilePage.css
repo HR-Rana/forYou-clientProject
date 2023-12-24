@@ -75,11 +75,11 @@
 
 .Running-deposit-page .Deposits-items button:nth-child(1) {
     background-color: var(--BrownColor);
-    color: white;
+    color: var(--whiteColor);
 }
 
 .Running-deposit-page .Deposits-items button:nth-child(2) {
-    background-color: green;
-    color: white;
+    background-color: var(--greenColor);
+    color: var(--whiteColor);
     cursor: not-allowed;
 }

@@ -12,8 +12,7 @@ export default function ProjectDone() {
 				setCount(false);
 			}}
 		>
-			{
-			 count && 
+			{count && (
 				<div className="Project-done-section flex-box container-fluid">
 					<div className="total-investor">
 						<h3>
@@ -22,25 +21,25 @@ export default function ProjectDone() {
 						<p>Total Investor</p>
 					</div>
 					<div className="total-investor">
-						<h3>
+						<h3>$
 							<CountUp end={10000} />
 						</h3>
 						<p>Last Week Deposit</p>
 					</div>
 					<div className="total-investor">
-						<h3>
+						<h3>$
 							<CountUp end={26000} />
 						</h3>
 						<p>Total Deposit Balance</p>
 					</div>
 					<div className="total-investor">
-						<h3>
+						<h3>$
 							<CountUp end={6000} />
 						</h3>
-						<p>Total Withdrawal Balance</p>
+						<p>Users total Withdrawn</p>
 					</div>
 				</div>
-			}
+			)}
 		</ScrollTrigger>
 	);
 }
