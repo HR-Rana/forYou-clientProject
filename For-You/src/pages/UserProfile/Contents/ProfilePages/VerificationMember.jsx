@@ -19,6 +19,7 @@ export default function VerificationMember() {
                         <form>
                             <input type="text" placeholder="Write NID Name" />
                             <input type="number" placeholder="Write NID Number" />
+                            <input type="text" placeholder="Nationality " />
                             <input type="submit" value="Requtest to Verify" />
                         </form>
 

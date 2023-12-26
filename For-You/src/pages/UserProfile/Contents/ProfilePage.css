@@ -114,7 +114,7 @@
 
 .verified-membership-page {
     height: 50vh;
-    
+
 }
 
 .verified-membership-page .verification-form-section {
@@ -148,4 +148,47 @@
 .verified-membership-page form input[type=submit] {
     padding: 15px 0;
     margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+.transation-history-page .transaction-box {
+    padding: 35px 0px;
+
+}
+
+.transaction-box .transactions {
+    width: 80%;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.transaction-box .transactions span {
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+    font-size: 15px;
+
+}
+
+.transaction-box .body {
+
+    padding: 10px;
+    background-color: var(--whiteColor);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0px 0px 3px rgba(94, 104, 121, .149);
+}
+
+.transaction-box .body h4 {
+    text-transform: capitalize;
 }

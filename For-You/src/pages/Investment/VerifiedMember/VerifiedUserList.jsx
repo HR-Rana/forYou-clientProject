@@ -15,7 +15,7 @@ export default function VerifiedUserList() {
 		<div className="verified-user-card ">
 			<span>
 				<h3>
-					Total <span>256</span> Members are Verified.
+					Total <span>253</span> Members are Verified.
 				</h3>
 			</span>
 			<table>
