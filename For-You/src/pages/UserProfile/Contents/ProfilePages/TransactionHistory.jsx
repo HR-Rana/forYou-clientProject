@@ -1,4 +1,5 @@
 import React from "react";
+import NotifyCard from "../NotifyCard";
 
 export default function TransactionHistory() {
 	const Transactions = [
@@ -44,17 +45,13 @@ export default function TransactionHistory() {
 				{Transactions.map((items, i) => {
 					const { date, title, amount } = items;
 					return (
-						<div className="transactions" key={i}>
-							<span>
-								<p>Date:{date}</p>
-							</span>
-							<div className="body">
-								<h4>{title}</h4>
-								<p>
-									Your {title} amount is {amount} Successfully Finished..
-								</p>
-							</div>
-						</div>
+						<NotifyCard
+							date={date}
+							title={title}
+							amount={amount}
+							Class={"Transaction"}
+							key={i}
+						/>
 					);
 				})}
 			</div>
