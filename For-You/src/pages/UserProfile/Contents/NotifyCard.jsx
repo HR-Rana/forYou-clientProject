@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function NotifyCard({ date, Class, title, amount }) {
+
 	return (
 		<div className={`transactions ${Class}`}>
 			<span>

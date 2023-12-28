@@ -117,11 +117,34 @@
 
 }
 
+.verification-form-section .react-tabs {
+    display: block;
+
+}
+
+.verification-form-section .react-tabs__tab-list {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 25px 0;
+    /* border-bottom: .5px solid gainsboro; */
+    background-color: transparent;
+}
+
+.verification-form-section .react-tabs__tab-list li {
+    font-size: 16px;
+}
+
 .verified-membership-page .verification-form-section {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
+}
+
+.verified-membership-page .react-tabs__tab-panel {
+    margin: 25px 0;
 }
 
 .verified-membership-page .verification-form {
@@ -143,6 +166,7 @@
     display: block;
     padding: 7px;
     margin: 8px 0;
+    font-size: 17px;
 }
 
 .verified-membership-page form input[type=submit] {
@@ -170,7 +194,7 @@
     margin: 0px auto;
 }
 
-.transaction-box .transactions span {
+.transactions span {
     width: 100%;
     display: flex;
     padding: 0 10px;
@@ -191,10 +215,11 @@
 
 .transaction-box .body h4 {
     text-transform: capitalize;
-    
+
 }
+
 .transaction-box .body p {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 
@@ -219,12 +244,13 @@
     margin: 20px auto;
     padding: 0px;
 }
-.notification-box .Notification span p{
-   padding: 0px 10px;
-   font-size: 15px;
+
+.notification-box .Notification span p {
+    padding: 0px 10px;
+    font-size: 15px;
 }
 
-.notification-box .Notification .body {
+.body {
     width: 100%;
     padding: 10px;
     background-color: white;
@@ -234,10 +260,37 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.notification-box .Notification .body h4{
+
+.body h4 {
     text-transform: capitalize;
 }
-.notification-box .Notification .body p{
+
+.body p {
     font-weight: 400;
-   font-size: 16px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/* Deposit page styles... */
+
+.Deposit-page {
+    padding: 15px;
+}
+
+.Deposit-page .deposit {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.notification-box .deposit span {
+    width: 100%;
+    display: flex;
+    padding: 0 10px;
+    font-size: 15px;
+
 }
