@@ -429,6 +429,7 @@ form input[type=submit] {
 .offer-card-area .body {
     padding: 20px 0;
     margin: auto auto;
+    background-color: transparent;
 }
 
 .offer-card-area .body h3 {

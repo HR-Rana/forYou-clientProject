@@ -8,9 +8,9 @@ export default function Footer() {
 		<footer>
 			<div className="footer-content flex-box">
 				<div className="footer-logo content">
-					<p>
-						<Link to={"/"}>For-you</Link>
-					</p>
+					<h3>
+						<Link to={"/"}>Retaron</Link>
+					</h3>
 					<div className="text">
 						<small>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.

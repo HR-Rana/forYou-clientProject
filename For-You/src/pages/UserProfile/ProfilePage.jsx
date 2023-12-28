@@ -15,7 +15,6 @@ import Profile from "./Contents/ProfilePages/Profile";
 import TransactionHistory from "./Contents/ProfilePages/TransactionHistory";
 import MaturedDeposit from "./Contents/ProfilePages/MaturedDeposit";
 import RunningDeposit from "./Contents/ProfilePages/RunningDeposit";
-import LoanTransaction from "./Contents/ProfilePages/LoanTransaction";
 import Notification from "./Contents/ProfilePages/Notification";
 import Deposits from "./Contents/ProfilePages/Deposits";
 import WithdrawHistory from "./Contents/ProfilePages/WithdrawHistory";
