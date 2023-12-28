@@ -236,6 +236,30 @@ form input[type=submit] {
     font-size: 15px;
 }
 
+.right-navbar-items .login-user a {
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+.right-navbar-items .login-user span {
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.right-navbar-items .login-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
 
 
 

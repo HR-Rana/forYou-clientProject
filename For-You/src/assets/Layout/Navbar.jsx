@@ -2,15 +2,12 @@ import React from "react";
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
-
-
-
+import  Avatar  from "../../assets/images/02.jpg";
 
 export default function Navbar() {
-	const {userData, login, setLogin} = useContext(AuthContext)
+	const { userData, setLogin } = useContext(AuthContext);
 
-	 console.log(userData);
-	
+	console.log(userData);
 
 	return (
 		<div className="top-navbar">
@@ -50,14 +47,33 @@ export default function Navbar() {
 							</li>
 						</ul>
 					</nav>
-					<div className="account">
-						<Link to={"/Authentication"}>
-							<button onClick={(e)=>{setLogin(true)}}>Login</button>
-						</Link>
-						<Link to={"/Registration"}>
-							<button onClick={(e)=>{setLogin(false)}}>Resigtration</button>
-						</Link>
-					</div>
+					{userData ? (
+						<div className="login-user">
+							<Link to={'/Profile'}><span>{"User-Name"}</span>
+							<img src={Avatar} alt="profile" /></Link>
+						</div>
+					) : (
+						<div className="account">
+							<Link to={"/Authentication"}>
+								<button
+									onClick={(e) => {
+										setLogin(true);
+									}}
+								>
+									Login
+								</button>
+							</Link>
+							<Link to={"/Registration"}>
+								<button
+									onClick={(e) => {
+										setLogin(false);
+									}}
+								>
+									Resigtration
+								</button>
+							</Link>
+						</div>
+					)}
 				</div>
 			</div>
 		</div>
