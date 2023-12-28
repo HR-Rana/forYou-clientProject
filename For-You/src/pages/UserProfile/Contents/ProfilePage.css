@@ -18,6 +18,8 @@
 }
 
 
+
+
 .profile-page {
     margin: 0;
     padding: 0;
@@ -88,12 +90,10 @@
 
 
 
+
+
+
 /* Matured deposit page */
-
-.matureDeposit-page .Deposits-items {
-    background-color: rgba(0, 128, 0, 0.099);
-}
-
 .matureDeposit-page .deposit-body {
     display: flex;
     flex-wrap: wrap;
@@ -167,7 +167,7 @@
 .transaction-box .transactions {
     width: 80%;
     padding: 10px;
-    margin: 15px auto;
+    margin: 0px auto;
 }
 
 .transaction-box .transactions span {
@@ -179,7 +179,6 @@
 }
 
 .transaction-box .body {
-
     padding: 10px;
     background-color: var(--whiteColor);
     border-radius: 15px;
@@ -192,4 +191,53 @@
 
 .transaction-box .body h4 {
     text-transform: capitalize;
+    
+}
+.transaction-box .body p {
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+/* Notifications */
+
+.notification-box {
+    width: 100%;
+    padding: 15px;
+}
+
+.notification-box .transactions {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.notification-box .Notification {
+    margin: 20px auto;
+    padding: 0px;
+}
+.notification-box .Notification span p{
+   padding: 0px 10px;
+   font-size: 15px;
+}
+
+.notification-box .Notification .body {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.notification-box .Notification .body h4{
+    text-transform: capitalize;
+}
+.notification-box .Notification .body p{
+    font-weight: 400;
+   font-size: 16px;
 }

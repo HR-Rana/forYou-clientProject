@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NotifyCard({date,Class, title, amount}) {
+export default function NotifyCard({ date, Class, title, amount }) {
 	return (
 		<div className={`transactions ${Class}`}>
 			<span>
@@ -9,7 +9,7 @@ export default function NotifyCard({date,Class, title, amount}) {
 			<div className="body">
 				<h4>{title}</h4>
 				<p>
-					Your {title} amount is {amount} Successfully Finished..
+					Your {title} {amount} Is Successfully Finished..
 				</p>
 			</div>
 		</div>

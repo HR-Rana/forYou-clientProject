@@ -17,8 +17,8 @@ export default function Notification() {
 		},
 		{
 			id: "03",
-			title: "withdraw",
-			amount: "$250",
+			title: "Login Attempt",
+			amount: "from Galaxy S23 Ultra",
 			date: "26-12-2023",
 		},
 		{
@@ -42,13 +42,17 @@ export default function Notification() {
 			</div>
 			<div className="notification-box">
 				{Notification.map((items, i) => {
-        const {date, title, amount } = items;
-					return <NotifyCard
-              date={date}
-              amount={amount}
-              title={title}
-              Class={"Notification"}
-           />;
+					const { date, title, amount } = items;
+					return (
+						<div className="">
+							<NotifyCard
+								date={date}
+								amount={amount}
+								title={title}
+								Class={"Notification"}
+							/>
+						</div>
+					);
 				})}
 			</div>
 		</div>

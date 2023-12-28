@@ -13,7 +13,7 @@ export default function MaturedDeposit() {
 				<div className="Deposit-area">
 					<div className="flex-box">
 						{Deposits.map((items, i) => {
-							const { title, invest, interst, mature, invested, duration } =
+							const { title, invest, interst, invested, duration } =
 								items;
 							return (
 								<div className="Deposits-items" key={i}>
