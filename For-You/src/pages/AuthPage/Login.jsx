@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import google from '../../assets/images/Google.png'
 import facebook from '../../assets/images/facebook.png'
+import { AuthContext } from "../../assets/Provider/AuthProvider";
 
 export default function Login() {
+	const {setLogin} = useContext(AuthContext)
 	return (
 		<div className="login-page">
 			<h3>Login your Account</h3>
@@ -16,7 +18,7 @@ export default function Login() {
 						<p><Link to={'/ResetPassword'}>forgot password?</Link></p>
 						<p>
 							Don't have account?
-							<Link to={"/Registration"}>Registration Now</Link>
+							<Link to={"/Registration"} onClick={(e)=>{setLogin(false)}}>Registration Now</Link>
 						</p>
 					</div>
 				</form>

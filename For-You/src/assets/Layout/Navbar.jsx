@@ -7,10 +7,10 @@ import { AuthContext } from "../Provider/AuthProvider";
 
 
 export default function Navbar() {
-	const {userData} = useContext(AuthContext)
+	const {userData, login, setLogin} = useContext(AuthContext)
 
 	 console.log(userData);
-	//  const { user, logOut } = useContext(authContext);
+	
 
 	return (
 		<div className="top-navbar">
@@ -52,10 +52,10 @@ export default function Navbar() {
 					</nav>
 					<div className="account">
 						<Link to={"/Authentication"}>
-							<button>Login</button>
+							<button onClick={(e)=>{setLogin(true)}}>Login</button>
 						</Link>
 						<Link to={"/Registration"}>
-							<button>Resigtration</button>
+							<button onClick={(e)=>{setLogin(false)}}>Resigtration</button>
 						</Link>
 					</div>
 				</div>

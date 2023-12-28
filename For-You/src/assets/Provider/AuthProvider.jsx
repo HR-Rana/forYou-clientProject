@@ -5,13 +5,22 @@ export const AuthContext = createContext(null);
 
 export default function AuthProvider({ children }) {
 	const [userData, setUserData] = useState(null);
+
+	// for login and registration switch
+	const [login, setLogin] = useState(true);
+
 	const [regPath, setResPath] = useState(false);
-	
-	const AllData = { userData, setUserData, regPath, setResPath };
+
+	const AllData = {
+		userData,
+		setUserData,
+		regPath,
+		setResPath,
+		login,
+		setLogin,
+	};
 
 	return (
-		 <AuthContext.Provider value={AllData}>
-            {children}
-        </AuthContext.Provider>
+		<AuthContext.Provider value={AllData}>{children}</AuthContext.Provider>
 	);
 }

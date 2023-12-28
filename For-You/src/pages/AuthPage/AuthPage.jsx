@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import Login from "./Login";
 import Registration from "./Registration";
 import { useHref, useParams } from "react-router-dom";
+import { AuthContext } from "../../assets/Provider/AuthProvider";
 
 export default function AuthPage() {
-	const [login, setLogin] = useState(true);
+	const {login, setLogin} = useContext(AuthContext);
     
 
     const getURL = window.location.href;
