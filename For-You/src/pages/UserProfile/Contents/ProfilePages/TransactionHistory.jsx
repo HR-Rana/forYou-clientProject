@@ -7,31 +7,31 @@ export default function TransactionHistory() {
 			id: "01",
 			title: "withdraw",
 			amount: "$250",
-			date: "26-12-2023",
+			date: "20-12-2023",
 		},
 		{
 			id: "02",
 			title: "deposit",
 			amount: "$250",
-			date: "26-12-2023",
+			date: "20-12-2023",
 		},
 		{
 			id: "03",
 			title: "withdraw",
 			amount: "$250",
-			date: "26-12-2023",
+			date: "21-12-2023",
 		},
 		{
 			id: "04",
 			title: "Deposit",
 			amount: "$250",
-			date: "26-12-2023",
+			date: "21-12-2023",
 		},
 		{
 			id: "05",
 			title: "Deposit",
 			amount: "$250",
-			date: "26-12-2023",
+			date: "22-12-2023",
 		},
 	];
 
